@@ -1,0 +1,6 @@
+15:45:03 **** Incremental Build of configuration Debug for project PLL_SYSCLK ****
+make all 
+make: Nothing to be done for 'all'.
+
+15:45:03 Build Finished (took 375ms)
+

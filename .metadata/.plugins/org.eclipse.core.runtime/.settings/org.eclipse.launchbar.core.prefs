@@ -1,0 +1,11 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Timer_100ms_take3 Debug,org.eclipse.launchbar.core.descriptorType.default\:PWM_LED Debug,org.eclipse.launchbar.core.descriptorType.default\:TimeBase_100ms Debug,org.eclipse.launchbar.core.descriptorType.default\:Timer_100ms_Run3 Debug,org.eclipse.launchbar.core.descriptorType.default\:TimeBase_100ms2_Int Debug
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:PWM_LED\ Debug/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:PWM_LED\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:TimeBase_100ms\ Debug/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:TimeBase_100ms\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:TimeBase_100ms2_Int\ Debug/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:TimeBase_100ms2_Int\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Timer_100ms_Run3\ Debug/activeLaunchMode=debug
