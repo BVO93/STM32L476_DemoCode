@@ -2,27 +2,27 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="__HAL_RCC_TIM6_CLK_ENABLE" key="selection"/>
+		<item value="TIM2_IRQHandler" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="TIM2_IRQHandler"/>
+			<item value="TIM2"/>
+			<item value="GPIOEx_Alternate_function_selection"/>
+			<item value="GPIO_mode"/>
+			<item value="Mode"/>
 			<item value="__HAL_RCC_TIM6_CLK_ENABLE"/>
 			<item value="TIM_Counter_Mode"/>
 			<item value="RCC_PLL_Clock_Source"/>
-			<item value="RCC_PLL_Config"/>
-			<item value="RCC_HSI_Config"/>
-			<item value="RCC_Oscillator_Type"/>
-			<item value="TIM6_DAC_IRQHandler"/>
-			<item value="TIM6"/>
 		</list>
 		<list key="replacehistory">
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="284" key="DIALOG_WIDTH"/>
-		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="391" key="DIALOG_HEIGHT"/>
 		<item value="54" key="DIALOG_X_ORIGIN"/>
 		<item value="576" key="DIALOG_Y_ORIGIN"/>

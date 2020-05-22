@@ -1,172 +1,169 @@
-18:20:54 **** Clean-only build of configuration Debug for project TimeBase_10ms_Int ****
-make clean 
-make: *** No rule to make target 'clean'.  Stop.
-18:20:54 **** Build of configuration Debug for project TimeBase_10ms_Int ****
+12:44:03 **** Build of configuration Debug for project Timer_InputCapture_HSIClock ****
 make all 
 Building file: ../startup/startup_stm32l476xx.s
 Invoking: MCU GCC Assembler
-C:\C_Workspace\TimeBase_10ms_Int\Debug
+C:\C_Workspace\Timer_InputCapture_HSIClock\Debug
 arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "startup/startup_stm32l476xx.o" "../startup/startup_stm32l476xx.s"
 Finished building: ../startup/startup_stm32l476xx.s
  
 Building file: ../Src/it.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\TimeBase_10ms_Int\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/TimeBase_10ms_Int/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/it.d" -MT"Src/it.o" -o "Src/it.o" "../Src/it.c"
+C:\C_Workspace\Timer_InputCapture_HSIClock\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/it.d" -MT"Src/it.o" -o "Src/it.o" "../Src/it.c"
 Finished building: ../Src/it.c
  
 Building file: ../Src/main.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\TimeBase_10ms_Int\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/TimeBase_10ms_Int/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+C:\C_Workspace\Timer_InputCapture_HSIClock\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
 Finished building: ../Src/main.c
  
 Building file: ../Src/msp.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\TimeBase_10ms_Int\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/TimeBase_10ms_Int/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/msp.d" -MT"Src/msp.o" -o "Src/msp.o" "../Src/msp.c"
+C:\C_Workspace\Timer_InputCapture_HSIClock\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/msp.d" -MT"Src/msp.o" -o "Src/msp.o" "../Src/msp.c"
 Finished building: ../Src/msp.c
  
 Building file: ../Src/syscalls.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\TimeBase_10ms_Int\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/TimeBase_10ms_Int/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" -o "Src/syscalls.o" "../Src/syscalls.c"
+C:\C_Workspace\Timer_InputCapture_HSIClock\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" -o "Src/syscalls.o" "../Src/syscalls.c"
 Finished building: ../Src/syscalls.c
  
 Building file: ../Src/system_stm32l4xx.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\TimeBase_10ms_Int\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/TimeBase_10ms_Int/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/system_stm32l4xx.d" -MT"Src/system_stm32l4xx.o" -o "Src/system_stm32l4xx.o" "../Src/system_stm32l4xx.c"
+C:\C_Workspace\Timer_InputCapture_HSIClock\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/system_stm32l4xx.d" -MT"Src/system_stm32l4xx.o" -o "Src/system_stm32l4xx.o" "../Src/system_stm32l4xx.c"
 Finished building: ../Src/system_stm32l4xx.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\TimeBase_10ms_Int\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/TimeBase_10ms_Int/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c"
+C:\C_Workspace\Timer_InputCapture_HSIClock\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\TimeBase_10ms_Int\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/TimeBase_10ms_Int/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c"
+C:\C_Workspace\Timer_InputCapture_HSIClock\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\TimeBase_10ms_Int\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/TimeBase_10ms_Int/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c"
+C:\C_Workspace\Timer_InputCapture_HSIClock\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\TimeBase_10ms_Int\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/TimeBase_10ms_Int/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c"
+C:\C_Workspace\Timer_InputCapture_HSIClock\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\TimeBase_10ms_Int\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/TimeBase_10ms_Int/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c"
+C:\C_Workspace\Timer_InputCapture_HSIClock\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\TimeBase_10ms_Int\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/TimeBase_10ms_Int/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c"
+C:\C_Workspace\Timer_InputCapture_HSIClock\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\TimeBase_10ms_Int\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/TimeBase_10ms_Int/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c"
+C:\C_Workspace\Timer_InputCapture_HSIClock\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\TimeBase_10ms_Int\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/TimeBase_10ms_Int/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c"
+C:\C_Workspace\Timer_InputCapture_HSIClock\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\TimeBase_10ms_Int\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/TimeBase_10ms_Int/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c"
+C:\C_Workspace\Timer_InputCapture_HSIClock\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\TimeBase_10ms_Int\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/TimeBase_10ms_Int/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c"
+C:\C_Workspace\Timer_InputCapture_HSIClock\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\TimeBase_10ms_Int\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/TimeBase_10ms_Int/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c"
+C:\C_Workspace\Timer_InputCapture_HSIClock\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\TimeBase_10ms_Int\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/TimeBase_10ms_Int/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c"
+C:\C_Workspace\Timer_InputCapture_HSIClock\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\TimeBase_10ms_Int\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/TimeBase_10ms_Int/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c"
+C:\C_Workspace\Timer_InputCapture_HSIClock\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\TimeBase_10ms_Int\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/TimeBase_10ms_Int/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c"
+C:\C_Workspace\Timer_InputCapture_HSIClock\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\TimeBase_10ms_Int\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/TimeBase_10ms_Int/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c"
+C:\C_Workspace\Timer_InputCapture_HSIClock\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\TimeBase_10ms_Int\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/TimeBase_10ms_Int/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c"
+C:\C_Workspace\Timer_InputCapture_HSIClock\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\TimeBase_10ms_Int\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/TimeBase_10ms_Int/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c"
+C:\C_Workspace\Timer_InputCapture_HSIClock\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\TimeBase_10ms_Int\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/TimeBase_10ms_Int/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c"
+C:\C_Workspace\Timer_InputCapture_HSIClock\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\TimeBase_10ms_Int\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/TimeBase_10ms_Int/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/TimeBase_10ms_Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c"
+C:\C_Workspace\Timer_InputCapture_HSIClock\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_InputCapture_HSIClock/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c
  
-Building target: TimeBase_10ms_Int.elf
+Building target: Timer_InputCapture_HSIClock.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32L476RGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "TimeBase_10ms_Int.elf" @"objects.list"   -lm
-Finished building target: TimeBase_10ms_Int.elf
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -u_printf_float -T"../STM32L476RGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Timer_InputCapture_HSIClock.elf" @"objects.list"   -lm
+Finished building target: Timer_InputCapture_HSIClock.elf
  
 make --no-print-directory post-build
 Generating hex and Printing size information:
-arm-none-eabi-objcopy -O ihex "TimeBase_10ms_Int.elf" "TimeBase_10ms_Int.hex"
-arm-none-eabi-size "TimeBase_10ms_Int.elf"
+arm-none-eabi-objcopy -O ihex "Timer_InputCapture_HSIClock.elf" "Timer_InputCapture_HSIClock.hex"
+arm-none-eabi-size "Timer_InputCapture_HSIClock.elf"
    text	   data	    bss	    dec	    hex	filename
-   2568	     32	   1632	   4232	   1088	TimeBase_10ms_Int.elf
+  21176	    504	   1968	  23648	   5c60	Timer_InputCapture_HSIClock.elf
  
-18:21:35 **** Programming project TimeBase_10ms_Int on chip ****
-"C:\\Ac6\\SystemWorkbench\\plugins\\fr.ac6.mcu.externaltools.openocd.win32_1.23.0.201904120827\\tools\\openocd\\bin\\openocd.exe" -f stm32.flash.2526040129257222825.cfg -s "C:\\C_Workspace\\TimeBase_10ms_Int" -s "C:\\Ac6\\SystemWorkbench\\plugins\\fr.ac6.mcu.debug_2.5.0.201904120827\\resources\\openocd\\st_scripts" -c "program Debug/TimeBase_10ms_Int.elf verify reset " -c shutdown 
+12:44:32 **** Programming project Timer_InputCapture_HSIClock on chip ****
+"C:\\Ac6\\SystemWorkbench\\plugins\\fr.ac6.mcu.externaltools.openocd.win32_1.23.0.201904120827\\tools\\openocd\\bin\\openocd.exe" -f stm32.flash.37931581937672034.cfg -s "C:\\C_Workspace\\Timer_InputCapture_HSIClock" -s "C:\\Ac6\\SystemWorkbench\\plugins\\fr.ac6.mcu.debug_2.5.0.201904120827\\resources\\openocd\\st_scripts" -c "program Debug/Timer_InputCapture_HSIClock.elf verify reset " -c shutdown 
 Open On-Chip Debugger 0.10.0+dev-00021-g524e8c8 (2019-04-12-08:48)
 Licensed under GNU GPL v2
 For bug reports, read
@@ -179,13 +176,13 @@ adapter_nsrst_delay: 100
 Info : clock speed 8000 kHz
 Info : STLINK v2.1 JTAG v36 API v2 M26 VID 0x0483 PID 0x374B
 Info : using stlink api v2
-Info : Target voltage: 3.249836
+Info : Target voltage: 3.250952
 Info : Unable to match requested speed 8000 kHz, using 4000 kHz
 Info : Stlink adapter speed set to 4000 kHz
 Info : STM32L476RGTx.cpu: hardware has 6 breakpoints, 4 watchpoints
 Info : Listening on port 3333 for gdb connections
 target halted due to debug-request, current mode: Thread 
-xPSR: 0x01000000 pc: 0x08000950 msp: 0x20018000
+xPSR: 0x01000000 pc: 0x08002e28 msp: 0x20018000
 Info : Unable to match requested speed 8000 kHz, using 4000 kHz
 Info : Stlink adapter speed set to 4000 kHz
 Info : Unable to match requested speed 8000 kHz, using 4000 kHz
@@ -198,14 +195,14 @@ Info : Erase the padded zone before the write
 Error: Whole bank access must start at beginning of bank.
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x20000050 msp: 0x20018000
-wrote 4096 bytes from file Debug/TimeBase_10ms_Int.elf in 0.199994s (20.001 KiB/s)
+wrote 22528 bytes from file Debug/Timer_InputCapture_HSIClock.elf in 0.703813s (31.258 KiB/s)
 ** Programming Finished **
 ** Verify Started **
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20018000
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20018000
-verified 2600 bytes in 0.160148s (15.854 KiB/s)
+verified 21688 bytes in 0.701495s (30.192 KiB/s)
 ** Verified OK **
 ** Resetting Target **
 shutdown command invoked

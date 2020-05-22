@@ -1,6 +1,6 @@
-18:18:34 **** Incremental Build of configuration Debug for project PLL_SYSCLK_HSI_Run2 ****
+12:43:07 **** Incremental Build of configuration Debug for project PLL_SYSCLK_HSI_Run2 ****
 make all 
 make: Nothing to be done for 'all'.
 
-18:18:35 Build Finished (took 571ms)
+12:43:07 Build Finished (took 378ms)
 
