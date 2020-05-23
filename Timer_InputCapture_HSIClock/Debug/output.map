@@ -4211,7 +4211,7 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17
                 0x00000a01       0x22 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
 OUTPUT(Timer_InputCapture_HSIClock.elf elf32-littlearm)
 
-.debug_info     0x00000000    0x11031
+.debug_info     0x00000000    0x11033
  .debug_info    0x00000000      0xdb0 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o
  .debug_info    0x00000db0     0x10a0 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o
  .debug_info    0x00001e50      0x989 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o
@@ -4221,13 +4221,13 @@ OUTPUT(Timer_InputCapture_HSIClock.elf elf32-littlearm)
  .debug_info    0x00007672     0x1779 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o
  .debug_info    0x00008deb     0x1e15 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o
  .debug_info    0x0000ac00     0x10ed Src/it.o
- .debug_info    0x0000bced     0x205e Src/main.o
- .debug_info    0x0000dd4b     0x1bf5 Src/msp.o
- .debug_info    0x0000f940      0xfd3 Src/syscalls.o
- .debug_info    0x00010913      0x6fc Src/system_stm32l4xx.o
- .debug_info    0x0001100f       0x22 startup/startup_stm32l476xx.o
+ .debug_info    0x0000bced     0x2060 Src/main.o
+ .debug_info    0x0000dd4d     0x1bf5 Src/msp.o
+ .debug_info    0x0000f942      0xfd3 Src/syscalls.o
+ .debug_info    0x00010915      0x6fc Src/system_stm32l4xx.o
+ .debug_info    0x00011011       0x22 startup/startup_stm32l476xx.o
 
-.debug_abbrev   0x00000000     0x1d58
+.debug_abbrev   0x00000000     0x1d67
  .debug_abbrev  0x00000000      0x209 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o
  .debug_abbrev  0x00000209      0x328 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o
  .debug_abbrev  0x00000531      0x1de Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o
@@ -4237,11 +4237,11 @@ OUTPUT(Timer_InputCapture_HSIClock.elf elf32-littlearm)
  .debug_abbrev  0x00000d49      0x237 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o
  .debug_abbrev  0x00000f80      0x24d Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o
  .debug_abbrev  0x000011cd      0x222 Src/it.o
- .debug_abbrev  0x000013ef      0x2df Src/main.o
- .debug_abbrev  0x000016ce      0x254 Src/msp.o
- .debug_abbrev  0x00001922      0x2d4 Src/syscalls.o
- .debug_abbrev  0x00001bf6      0x150 Src/system_stm32l4xx.o
- .debug_abbrev  0x00001d46       0x12 startup/startup_stm32l476xx.o
+ .debug_abbrev  0x000013ef      0x2ee Src/main.o
+ .debug_abbrev  0x000016dd      0x254 Src/msp.o
+ .debug_abbrev  0x00001931      0x2d4 Src/syscalls.o
+ .debug_abbrev  0x00001c05      0x150 Src/system_stm32l4xx.o
+ .debug_abbrev  0x00001d55       0x12 startup/startup_stm32l476xx.o
 
 .debug_loc      0x00000000     0x8e67
  .debug_loc     0x00000000      0x1f1 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o

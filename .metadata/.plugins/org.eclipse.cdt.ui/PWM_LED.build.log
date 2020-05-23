@@ -1,6 +1,6 @@
-12:43:08 **** Incremental Build of configuration Debug for project PWM_LED ****
+11:38:12 **** Incremental Build of configuration Debug for project PWM_LED ****
 make all 
 make: Nothing to be done for 'all'.
 
-12:43:09 Build Finished (took 380ms)
+11:38:13 Build Finished (took 455ms)
 
