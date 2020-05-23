@@ -13,7 +13,14 @@ void GPIO_Init(void);
 void Error_handler(void);
 void TIMER2_Init(void);
 void UART2_Init(void);
-void SystemClock_Config_HSI(uint8_t clock_freq);
+void SystemClock_Config_HSI();
+void printClockFreq(void);
+
+// UART
+uint16_t lenOfData = 0;
+char *userData = "Hello , ready ! \r\n";
+char msg[100];
+
 
 TIM_HandleTypeDef htimer2;
 UART_HandleTypeDef huart2;
@@ -23,12 +30,12 @@ int main(void) {
 	uint16_t brightness = 0;
 
 	HAL_Init();
-
-	SystemClock_Config_HSI(SYS_CLOCK_FREQ_50_MHZ);
-
-	GPIO_Init();
+	//GPIO_Init();
+	SystemClock_Config_HSI();
 
 	UART2_Init();
+	printClockFreq();
+
 
 	TIMER2_Init();
 
@@ -38,29 +45,34 @@ int main(void) {
 
 	while (1) {
 
+
 		while (brightness < htimer2.Init.Period) {
-			brightness += 20;
+			brightness = brightness +10;
 			__HAL_TIM_SET_COMPARE(&htimer2, TIM_CHANNEL_1, brightness);
 			HAL_Delay(1);
 
 		}
 
 		while (brightness > 0) {
-			brightness -= 20;
+			brightness = brightness - 10;
 			__HAL_TIM_SET_COMPARE(&htimer2, TIM_CHANNEL_1, brightness);
 			HAL_Delay(1);
 
 		}
 	}
 
+
 	return 0;
+
+
 }
+
 
 /**
  * @brief System Clock Configuration
  * @retval None
  */
-void SystemClock_Config_HSI(uint8_t clock_freq) {
+void SystemClock_Config_HSI() {
 
 	RCC_OscInitTypeDef osc_init;
 	RCC_ClkInitTypeDef clk_init;
@@ -74,63 +86,20 @@ void SystemClock_Config_HSI(uint8_t clock_freq) {
 	osc_init.PLL.PLLState = RCC_PLL_ON;
 	osc_init.PLL.PLLSource = RCC_PLLSOURCE_HSI;
 
-	switch (clock_freq) {
+	osc_init.PLL.PLLM = 4;
+	osc_init.PLL.PLLN = 25;
+	osc_init.PLL.PLLP = 7;
+	osc_init.PLL.PLLQ = 2;
+	osc_init.PLL.PLLR = 2;
 
-	case SYS_CLOCK_FREQ_50_MHZ: {
-		osc_init.PLL.PLLM = 4;
-		osc_init.PLL.PLLN = 25;
-		osc_init.PLL.PLLP = 7;
-		osc_init.PLL.PLLQ = 2;
-		osc_init.PLL.PLLR = 2;
+	clk_init.ClockType = RCC_CLOCKTYPE_SYSCLK | RCC_CLOCKTYPE_HCLK |
+	RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
+	clk_init.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+	clk_init.AHBCLKDivider = RCC_SYSCLK_DIV1;
+	clk_init.APB1CLKDivider = RCC_HCLK_DIV2;
+	clk_init.APB2CLKDivider = RCC_HCLK_DIV2;
 
-		clk_init.ClockType = RCC_CLOCKTYPE_SYSCLK | RCC_CLOCKTYPE_HCLK |
-		RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
-		clk_init.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
-		clk_init.AHBCLKDivider = RCC_SYSCLK_DIV1;
-		clk_init.APB1CLKDivider = RCC_HCLK_DIV2;
-		clk_init.APB2CLKDivider = RCC_HCLK_DIV2;
-
-		Flatency = FLASH_ACR_LATENCY_1WS;
-		break;
-	}
-	case SYS_CLOCK_FREQ_80_MHZ: {
-		osc_init.PLL.PLLM = 1;
-		osc_init.PLL.PLLN = 10;
-		osc_init.PLL.PLLP = 7;
-		osc_init.PLL.PLLQ = 2;
-		osc_init.PLL.PLLR = 2;
-
-		clk_init.ClockType = RCC_CLOCKTYPE_SYSCLK | RCC_CLOCKTYPE_HCLK |
-		RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
-		clk_init.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
-		clk_init.AHBCLKDivider = RCC_SYSCLK_DIV1;
-		clk_init.APB1CLKDivider = RCC_HCLK_DIV2;
-		clk_init.APB2CLKDivider = RCC_HCLK_DIV2;
-
-		Flatency = FLASH_ACR_LATENCY_2WS;
-		break;
-
-	}
-	case SYS_CLOCK_FREQ_20_MHZ: {
-		osc_init.PLL.PLLM = 4;
-		osc_init.PLL.PLLN = 20;
-		osc_init.PLL.PLLP = 7;
-		osc_init.PLL.PLLQ = 2;
-		osc_init.PLL.PLLR = 4;
-
-		clk_init.ClockType = RCC_CLOCKTYPE_SYSCLK | RCC_CLOCKTYPE_HCLK |
-		RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
-		clk_init.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
-		clk_init.AHBCLKDivider = RCC_SYSCLK_DIV1;
-		clk_init.APB1CLKDivider = RCC_HCLK_DIV2;
-		clk_init.APB2CLKDivider = RCC_HCLK_DIV2;
-
-		Flatency = FLASH_ACR_LATENCY_1WS;
-		break;
-	}
-	default:
-		return;
-	}
+	Flatency = FLASH_ACR_LATENCY_1WS;
 
 	if (HAL_RCC_OscConfig(&osc_init) != HAL_OK) {
 		Error_handler();
@@ -147,6 +116,8 @@ void SystemClock_Config_HSI(uint8_t clock_freq) {
 	HAL_NVIC_SetPriority(SysTick_IRQn, 0, 0);
 
 }
+
+
 
 void GPIO_Init(void) {
 	__HAL_RCC_GPIOA_CLK_ENABLE()
@@ -177,8 +148,8 @@ void TIMER2_Init(void) {
 
 	TIM_OC_InitTypeDef tim2PWM_Config;
 	htimer2.Instance = TIM2;
-	htimer2.Init.Period = 10 - 1;
-	htimer2.Init.Prescaler = 4999;
+	htimer2.Init.Period = 10000 - 1;
+	htimer2.Init.Prescaler = 4;
 	if (HAL_TIM_PWM_Init(&htimer2) != HAL_OK) {
 		Error_handler();
 	}
@@ -189,15 +160,46 @@ void TIMER2_Init(void) {
 	tim2PWM_Config.OCPolarity = TIM_OCPOLARITY_HIGH;
 	tim2PWM_Config.Pulse = 0;
 
-	if (HAL_TIM_PWM_ConfigChannel(&htimer2, &tim2PWM_Config, TIM_CHANNEL_1)
-			!= HAL_OK) {
+	if (HAL_TIM_PWM_ConfigChannel(&htimer2, &tim2PWM_Config, TIM_CHANNEL_1) != HAL_OK) {
 		Error_handler();
 	}
 
 }
 
+
+
+// ******** PRINT CLOCK FREQ ********** //
+void printClockFreq(void){
+
+
+	HAL_UART_Transmit(&huart2, (uint8_t*) userData, lenOfData, HAL_MAX_DELAY);
+
+	memset(msg, 0, sizeof(msg));
+	sprintf(msg, "SYSCLK: %ld\r\n", HAL_RCC_GetSysClockFreq());
+	lenOfData = strlen(msg);
+	HAL_UART_Transmit(&huart2, (uint8_t*) msg, lenOfData, HAL_MAX_DELAY);
+
+	memset(msg, 0, sizeof(msg));
+	sprintf(msg, "HCLK: %ld\r\n", HAL_RCC_GetHCLKFreq());
+	lenOfData = strlen(msg);
+	HAL_UART_Transmit(&huart2, (uint8_t*) msg, lenOfData, HAL_MAX_DELAY);
+
+	memset(msg, 0, sizeof(msg));
+	sprintf(msg, "PCLK1: %ld\r\n", HAL_RCC_GetPCLK1Freq());
+	lenOfData = strlen(msg);
+	HAL_UART_Transmit(&huart2, (uint8_t*) msg, lenOfData, HAL_MAX_DELAY);
+
+	memset(msg, 0, sizeof(msg));
+	sprintf(msg, "PCLK2: %ld\r\n\n", HAL_RCC_GetPCLK2Freq());
+	lenOfData = strlen(msg);
+	HAL_UART_Transmit(&huart2, (uint8_t*) msg, lenOfData, HAL_MAX_DELAY);
+
+	return;
+}
+
 void Error_handler(void) {
-	while (1)
-		;
+
+	//HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, 1);
+	while (1);
 }
 

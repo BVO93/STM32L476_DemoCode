@@ -1,179 +1,134 @@
-11:39:21 **** Build of configuration Debug for project Timer_OuputCompare ****
+13:02:51 **** Incremental Build of configuration Debug for project PWM_LED ****
 make all 
-Building file: ../startup/startup_stm32l476xx.s
-Invoking: MCU GCC Assembler
-C:\C_Workspace\Timer_OuputCompare\Debug
-arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "startup/startup_stm32l476xx.o" "../startup/startup_stm32l476xx.s"
-Finished building: ../startup/startup_stm32l476xx.s
- 
-Building file: ../Src/it.c
-Invoking: MCU GCC Compiler
-C:\C_Workspace\Timer_OuputCompare\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_OuputCompare/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/it.d" -MT"Src/it.o" -o "Src/it.o" "../Src/it.c"
-Finished building: ../Src/it.c
- 
 Building file: ../Src/main.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\Timer_OuputCompare\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_OuputCompare/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
-../Src/main.c: In function 'main':
-../Src/main.c:81:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
-  sprintf(msg, "Timer init done \n");
-  ^~~~~~~
-../Src/main.c:81:2: warning: incompatible implicit declaration of built-in function 'sprintf'
-../Src/main.c:81:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+C:\C_Workspace\PWM_LED\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/PWM_LED/Inc" -I"C:/C_Workspace/PWM_LED/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/PWM_LED/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/PWM_LED/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/PWM_LED/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
 ../Src/main.c: In function 'printClockFreq':
-../Src/main.c:146:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Src/main.c:178:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
   sprintf(msg, "SYSCLK: %ld\r\n", HAL_RCC_GetSysClockFreq());
   ^~~~~~~
-../Src/main.c:146:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
-../Src/main.c: In function 'Error_handler':
-../Src/main.c:272:2: warning: incompatible implicit declaration of built-in function 'sprintf'
-  sprintf(msg, "Something went wrong, stuck in error  !");
-  ^~~~~~~
-../Src/main.c:272:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Src/main.c:178:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Src/main.c:178:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
 Finished building: ../Src/main.c
  
-Building file: ../Src/msp.c
-Invoking: MCU GCC Compiler
-C:\C_Workspace\Timer_OuputCompare\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_OuputCompare/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/msp.d" -MT"Src/msp.o" -o "Src/msp.o" "../Src/msp.c"
-Finished building: ../Src/msp.c
- 
-Building file: ../Src/system_stm32l4xx.c
-Invoking: MCU GCC Compiler
-C:\C_Workspace\Timer_OuputCompare\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_OuputCompare/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/system_stm32l4xx.d" -MT"Src/system_stm32l4xx.o" -o "Src/system_stm32l4xx.o" "../Src/system_stm32l4xx.c"
-Finished building: ../Src/system_stm32l4xx.c
- 
-Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c
-Invoking: MCU GCC Compiler
-C:\C_Workspace\Timer_OuputCompare\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_OuputCompare/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c"
-Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c
- 
-Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c
-Invoking: MCU GCC Compiler
-C:\C_Workspace\Timer_OuputCompare\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_OuputCompare/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c"
-Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c
- 
-Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c
-Invoking: MCU GCC Compiler
-C:\C_Workspace\Timer_OuputCompare\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_OuputCompare/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c"
-Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c
- 
-Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c
-Invoking: MCU GCC Compiler
-C:\C_Workspace\Timer_OuputCompare\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_OuputCompare/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c"
-Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c
- 
-Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c
-Invoking: MCU GCC Compiler
-C:\C_Workspace\Timer_OuputCompare\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_OuputCompare/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c"
-Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c
- 
-Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c
-Invoking: MCU GCC Compiler
-C:\C_Workspace\Timer_OuputCompare\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_OuputCompare/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c"
-Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c
- 
-Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c
-Invoking: MCU GCC Compiler
-C:\C_Workspace\Timer_OuputCompare\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_OuputCompare/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c"
-Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c
- 
-Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c
-Invoking: MCU GCC Compiler
-C:\C_Workspace\Timer_OuputCompare\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_OuputCompare/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c"
-Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c
- 
-Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c
-Invoking: MCU GCC Compiler
-C:\C_Workspace\Timer_OuputCompare\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_OuputCompare/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c"
-Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c
- 
-Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c
-Invoking: MCU GCC Compiler
-C:\C_Workspace\Timer_OuputCompare\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_OuputCompare/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c"
-Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c
- 
-Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c
-Invoking: MCU GCC Compiler
-C:\C_Workspace\Timer_OuputCompare\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_OuputCompare/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c"
-Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c
- 
-Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c
-Invoking: MCU GCC Compiler
-C:\C_Workspace\Timer_OuputCompare\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_OuputCompare/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c"
-Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c
- 
-Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c
-Invoking: MCU GCC Compiler
-C:\C_Workspace\Timer_OuputCompare\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_OuputCompare/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c"
-Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c
- 
-Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c
-Invoking: MCU GCC Compiler
-C:\C_Workspace\Timer_OuputCompare\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_OuputCompare/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c"
-Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c
- 
-Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c
-Invoking: MCU GCC Compiler
-C:\C_Workspace\Timer_OuputCompare\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_OuputCompare/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c"
-Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c
- 
-Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c
-Invoking: MCU GCC Compiler
-C:\C_Workspace\Timer_OuputCompare\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_OuputCompare/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c"
-Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c
- 
-Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c
-Invoking: MCU GCC Compiler
-C:\C_Workspace\Timer_OuputCompare\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_OuputCompare/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c"
-Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c
- 
-Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c
-Invoking: MCU GCC Compiler
-C:\C_Workspace\Timer_OuputCompare\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_OuputCompare/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c"
-Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c
- 
-Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c
-Invoking: MCU GCC Compiler
-C:\C_Workspace\Timer_OuputCompare\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/Timer_OuputCompare/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/Timer_OuputCompare/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c"
-Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c
- 
-Building target: Timer_OuputCompare.elf
+Building target: PWM_LED.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32L476RGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Timer_OuputCompare.elf" @"objects.list"   -lm
-Finished building target: Timer_OuputCompare.elf
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32L476RGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PWM_LED.elf" @"objects.list"   -lm
+Finished building target: PWM_LED.elf
  
 make --no-print-directory post-build
 Generating hex and Printing size information:
-arm-none-eabi-objcopy -O ihex "Timer_OuputCompare.elf" "Timer_OuputCompare.hex"
-arm-none-eabi-size "Timer_OuputCompare.elf"
+arm-none-eabi-objcopy -O ihex "PWM_LED.elf" "PWM_LED.hex"
+arm-none-eabi-size "PWM_LED.elf"
    text	   data	    bss	    dec	    hex	filename
-  12320	    152	   1952	  14424	   3858	Timer_OuputCompare.elf
+  12024	    136	   1888	  14048	   36e0	PWM_LED.elf
  
-11:39:57 **** Programming project Timer_OuputCompare on chip ****
-"C:\\Ac6\\SystemWorkbench\\plugins\\fr.ac6.mcu.externaltools.openocd.win32_1.23.0.201904120827\\tools\\openocd\\bin\\openocd.exe" -f stm32.flash.1860562467939979339.cfg -s "C:\\C_Workspace\\Timer_OuputCompare" -s "C:\\Ac6\\SystemWorkbench\\plugins\\fr.ac6.mcu.debug_2.5.0.201904120827\\resources\\openocd\\st_scripts" -c "program Debug/Timer_OuputCompare.elf verify reset " -c shutdown 
+13:02:59 **** Programming project PWM_LED on chip ****
+"C:\\Ac6\\SystemWorkbench\\plugins\\fr.ac6.mcu.externaltools.openocd.win32_1.23.0.201904120827\\tools\\openocd\\bin\\openocd.exe" -f stm32.flash.2472531245226816411.cfg -s "C:\\C_Workspace\\PWM_LED" -s "C:\\Ac6\\SystemWorkbench\\plugins\\fr.ac6.mcu.debug_2.5.0.201904120827\\resources\\openocd\\st_scripts" -c "program Debug/PWM_LED.elf verify reset " -c shutdown 
+Open On-Chip Debugger 0.10.0+dev-00021-g524e8c8 (2019-04-12-08:48)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+padded zone erase set to 1
+adapter speed: 8000 kHz
+adapter_nsrst_delay: 100
+Info : clock speed 8000 kHz
+Info : STLINK v2.1 JTAG v36 API v2 M26 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.245115
+Info : Unable to match requested speed 8000 kHz, using 4000 kHz
+Info : Stlink adapter speed set to 4000 kHz
+Info : STM32L476RGTx.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Listening on port 3333 for gdb connections
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002548 msp: 0x20018000
+Info : Unable to match requested speed 8000 kHz, using 4000 kHz
+Info : Stlink adapter speed set to 4000 kHz
+Info : Unable to match requested speed 8000 kHz, using 4000 kHz
+adapter speed: 4000 kHz
+** Programming Started **
+auto erase enabled
+Info : Device id = 0x10076415
+Info : STM32L4xx flash size is 1024kb, base address is 0x8000000
+Info : Erase the padded zone before the write
+Error: Whole bank access must start at beginning of bank.
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x20000050 msp: 0x20018000
+wrote 12288 bytes from file Debug/PWM_LED.elf in 0.432740s (27.730 KiB/s)
+** Programming Finished **
+** Verify Started **
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20018000
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20018000
+verified 12168 bytes in 0.429454s (27.670 KiB/s)
+** Verified OK **
+** Resetting Target **
+shutdown command invoked
+13:05:05 **** Incremental Build of configuration Debug for project HSE_SYSCLK_8Mhz_Run2 ****
+make all 
+make: Nothing to be done for 'all'.
+13:05:06 **** Incremental Build of configuration Debug for project HelloWorldV4 ****
+make all 
+make: Nothing to be done for 'all'.
+13:05:06 **** Incremental Build of configuration Debug for project PLL_SYSCLK_HSI_Run2 ****
+make all 
+make: Nothing to be done for 'all'.
+13:05:07 **** Incremental Build of configuration Debug for project PWM1_timer_OC ****
+make all 
+make: Nothing to be done for 'all'.
+13:05:07 **** Incremental Build of configuration Debug for project PWM_LED ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\PWM_LED\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/PWM_LED/Inc" -I"C:/C_Workspace/PWM_LED/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/PWM_LED/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/PWM_LED/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/PWM_LED/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'printClockFreq':
+../Src/main.c:178:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  sprintf(msg, "SYSCLK: %ld\r\n", HAL_RCC_GetSysClockFreq());
+  ^~~~~~~
+../Src/main.c:178:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Src/main.c:178:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+Finished building: ../Src/main.c
+ 
+Building target: PWM_LED.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32L476RGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PWM_LED.elf" @"objects.list"   -lm
+Finished building target: PWM_LED.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "PWM_LED.elf" "PWM_LED.hex"
+arm-none-eabi-size "PWM_LED.elf"
+   text	   data	    bss	    dec	    hex	filename
+  12024	    136	   1888	  14048	   36e0	PWM_LED.elf
+ 
+13:05:10 **** Incremental Build of configuration Debug for project TimeBase_10ms_Int ****
+make all 
+make: Nothing to be done for 'all'.
+13:05:10 **** Incremental Build of configuration Debug for project Timer_100ms_Run3 ****
+make all 
+make: Nothing to be done for 'all'.
+13:05:11 **** Incremental Build of configuration Debug for project Timer_InputCapture ****
+make all 
+make: Nothing to be done for 'all'.
+13:05:11 **** Incremental Build of configuration Debug for project Timer_InputCapture_HSIClock ****
+make all 
+make: Nothing to be done for 'all'.
+13:05:12 **** Incremental Build of configuration Debug for project Timer_OuputCompare ****
+make all 
+make: Nothing to be done for 'all'.
+13:05:12 **** Incremental Build of configuration Debug for project USART2_Example ****
+make all 
+make: Nothing to be done for 'all'.
+13:05:13 **** Incremental Build of configuration Debug for project USART2_Example2_Interupt ****
+make all 
+make: Nothing to be done for 'all'.
+13:05:26 **** Programming project PWM_LED on chip ****
+"C:\\Ac6\\SystemWorkbench\\plugins\\fr.ac6.mcu.externaltools.openocd.win32_1.23.0.201904120827\\tools\\openocd\\bin\\openocd.exe" -f stm32.flash.273587753007538897.cfg -s "C:\\C_Workspace\\PWM_LED" -s "C:\\Ac6\\SystemWorkbench\\plugins\\fr.ac6.mcu.debug_2.5.0.201904120827\\resources\\openocd\\st_scripts" -c "program Debug/PWM_LED.elf verify reset " -c shutdown 
 Open On-Chip Debugger 0.10.0+dev-00021-g524e8c8 (2019-04-12-08:48)
 Licensed under GNU GPL v2
 For bug reports, read
@@ -192,7 +147,7 @@ Info : Stlink adapter speed set to 4000 kHz
 Info : STM32L476RGTx.cpu: hardware has 6 breakpoints, 4 watchpoints
 Info : Listening on port 3333 for gdb connections
 target halted due to debug-request, current mode: Thread 
-xPSR: 0x01000000 pc: 0x08001f30 msp: 0x20018000
+xPSR: 0x01000000 pc: 0x08002548 msp: 0x20018000
 Info : Unable to match requested speed 8000 kHz, using 4000 kHz
 Info : Stlink adapter speed set to 4000 kHz
 Info : Unable to match requested speed 8000 kHz, using 4000 kHz
@@ -205,14 +160,357 @@ Info : Erase the padded zone before the write
 Error: Whole bank access must start at beginning of bank.
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x20000050 msp: 0x20018000
-wrote 14336 bytes from file Debug/Timer_OuputCompare.elf in 0.513994s (27.238 KiB/s)
+wrote 12288 bytes from file Debug/PWM_LED.elf in 0.434667s (27.607 KiB/s)
 ** Programming Finished **
 ** Verify Started **
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20018000
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20018000
-verified 12480 bytes in 0.438426s (27.798 KiB/s)
+verified 12168 bytes in 0.432178s (27.495 KiB/s)
+** Verified OK **
+** Resetting Target **
+shutdown command invoked
+13:05:49 **** Incremental Build of configuration Debug for project HSE_SYSCLK_8Mhz_Run2 ****
+make all 
+make: Nothing to be done for 'all'.
+13:05:49 **** Incremental Build of configuration Debug for project HelloWorldV4 ****
+make all 
+make: Nothing to be done for 'all'.
+13:05:50 **** Incremental Build of configuration Debug for project PLL_SYSCLK_HSI_Run2 ****
+make all 
+make: Nothing to be done for 'all'.
+13:05:51 **** Incremental Build of configuration Debug for project PWM1_timer_OC ****
+make all 
+Building file: ../Src/msp.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\PWM1_timer_OC\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/PWM1_timer_OC/Inc" -I"C:/C_Workspace/PWM1_timer_OC/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/PWM1_timer_OC/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/PWM1_timer_OC/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/PWM1_timer_OC/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/msp.d" -MT"Src/msp.o" -o "Src/msp.o" "../Src/msp.c"
+Finished building: ../Src/msp.c
+ 
+Building target: PWM1_timer_OC.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32L476RGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PWM1_timer_OC.elf" @"objects.list"   -lm
+Finished building target: PWM1_timer_OC.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "PWM1_timer_OC.elf" "PWM1_timer_OC.hex"
+arm-none-eabi-size "PWM1_timer_OC.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9264	     32	   1760	  11056	   2b30	PWM1_timer_OC.elf
+ 
+13:05:53 **** Incremental Build of configuration Debug for project PWM_LED ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\PWM_LED\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/PWM_LED/Inc" -I"C:/C_Workspace/PWM_LED/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/PWM_LED/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/PWM_LED/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/PWM_LED/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'printClockFreq':
+../Src/main.c:178:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  sprintf(msg, "SYSCLK: %ld\r\n", HAL_RCC_GetSysClockFreq());
+  ^~~~~~~
+../Src/main.c:178:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Src/main.c:178:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+Finished building: ../Src/main.c
+ 
+Building target: PWM_LED.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32L476RGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PWM_LED.elf" @"objects.list"   -lm
+Finished building target: PWM_LED.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "PWM_LED.elf" "PWM_LED.hex"
+arm-none-eabi-size "PWM_LED.elf"
+   text	   data	    bss	    dec	    hex	filename
+  12024	    136	   1888	  14048	   36e0	PWM_LED.elf
+ 
+13:05:55 **** Incremental Build of configuration Debug for project TimeBase_10ms_Int ****
+make all 
+make: Nothing to be done for 'all'.
+13:05:55 **** Incremental Build of configuration Debug for project Timer_100ms_Run3 ****
+make all 
+make: Nothing to be done for 'all'.
+13:05:56 **** Incremental Build of configuration Debug for project Timer_InputCapture ****
+make all 
+make: Nothing to be done for 'all'.
+13:05:57 **** Incremental Build of configuration Debug for project Timer_InputCapture_HSIClock ****
+make all 
+make: Nothing to be done for 'all'.
+13:05:57 **** Incremental Build of configuration Debug for project Timer_OuputCompare ****
+make all 
+make: Nothing to be done for 'all'.
+13:05:58 **** Incremental Build of configuration Debug for project USART2_Example ****
+make all 
+make: Nothing to be done for 'all'.
+13:05:58 **** Incremental Build of configuration Debug for project USART2_Example2_Interupt ****
+make all 
+make: Nothing to be done for 'all'.
+13:06:07 **** Programming project PWM_LED on chip ****
+"C:\\Ac6\\SystemWorkbench\\plugins\\fr.ac6.mcu.externaltools.openocd.win32_1.23.0.201904120827\\tools\\openocd\\bin\\openocd.exe" -f stm32.flash.7903752098470945607.cfg -s "C:\\C_Workspace\\PWM_LED" -s "C:\\Ac6\\SystemWorkbench\\plugins\\fr.ac6.mcu.debug_2.5.0.201904120827\\resources\\openocd\\st_scripts" -c "program Debug/PWM_LED.elf verify reset " -c shutdown 
+Open On-Chip Debugger 0.10.0+dev-00021-g524e8c8 (2019-04-12-08:48)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+padded zone erase set to 1
+adapter speed: 8000 kHz
+adapter_nsrst_delay: 100
+Info : clock speed 8000 kHz
+Info : STLINK v2.1 JTAG v36 API v2 M26 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.243541
+Info : Unable to match requested speed 8000 kHz, using 4000 kHz
+Info : Stlink adapter speed set to 4000 kHz
+Info : STM32L476RGTx.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Listening on port 3333 for gdb connections
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002548 msp: 0x20018000
+Info : Unable to match requested speed 8000 kHz, using 4000 kHz
+Info : Stlink adapter speed set to 4000 kHz
+Info : Unable to match requested speed 8000 kHz, using 4000 kHz
+adapter speed: 4000 kHz
+** Programming Started **
+auto erase enabled
+Info : Device id = 0x10076415
+Info : STM32L4xx flash size is 1024kb, base address is 0x8000000
+Info : Erase the padded zone before the write
+Error: Whole bank access must start at beginning of bank.
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x20000050 msp: 0x20018000
+wrote 12288 bytes from file Debug/PWM_LED.elf in 0.434979s (27.588 KiB/s)
+** Programming Finished **
+** Verify Started **
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20018000
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20018000
+verified 12168 bytes in 0.429062s (27.695 KiB/s)
+** Verified OK **
+** Resetting Target **
+shutdown command invoked
+13:07:16 **** Incremental Build of configuration Debug for project HSE_SYSCLK_8Mhz_Run2 ****
+make all 
+make: Nothing to be done for 'all'.
+13:07:17 **** Incremental Build of configuration Debug for project HelloWorldV4 ****
+make all 
+make: Nothing to be done for 'all'.
+13:07:17 **** Incremental Build of configuration Debug for project PLL_SYSCLK_HSI_Run2 ****
+make all 
+make: Nothing to be done for 'all'.
+13:07:18 **** Incremental Build of configuration Debug for project PWM1_timer_OC ****
+make all 
+make: Nothing to be done for 'all'.
+13:07:18 **** Incremental Build of configuration Debug for project PWM_LED ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\PWM_LED\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/PWM_LED/Inc" -I"C:/C_Workspace/PWM_LED/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/PWM_LED/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/PWM_LED/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/PWM_LED/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'printClockFreq':
+../Src/main.c:178:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  sprintf(msg, "SYSCLK: %ld\r\n", HAL_RCC_GetSysClockFreq());
+  ^~~~~~~
+../Src/main.c:178:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Src/main.c:178:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+Finished building: ../Src/main.c
+ 
+Building target: PWM_LED.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32L476RGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PWM_LED.elf" @"objects.list"   -lm
+Finished building target: PWM_LED.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "PWM_LED.elf" "PWM_LED.hex"
+arm-none-eabi-size "PWM_LED.elf"
+   text	   data	    bss	    dec	    hex	filename
+  11936	    136	   1888	  13960	   3688	PWM_LED.elf
+ 
+13:07:20 **** Incremental Build of configuration Debug for project TimeBase_10ms_Int ****
+make all 
+make: Nothing to be done for 'all'.
+13:07:21 **** Incremental Build of configuration Debug for project Timer_100ms_Run3 ****
+make all 
+make: Nothing to be done for 'all'.
+13:07:21 **** Incremental Build of configuration Debug for project Timer_InputCapture ****
+make all 
+make: Nothing to be done for 'all'.
+13:07:22 **** Incremental Build of configuration Debug for project Timer_InputCapture_HSIClock ****
+make all 
+make: Nothing to be done for 'all'.
+13:07:23 **** Incremental Build of configuration Debug for project Timer_OuputCompare ****
+make all 
+make: Nothing to be done for 'all'.
+13:07:23 **** Incremental Build of configuration Debug for project USART2_Example ****
+make all 
+make: Nothing to be done for 'all'.
+13:07:24 **** Incremental Build of configuration Debug for project USART2_Example2_Interupt ****
+make all 
+make: Nothing to be done for 'all'.
+13:07:29 **** Programming project PWM_LED on chip ****
+"C:\\Ac6\\SystemWorkbench\\plugins\\fr.ac6.mcu.externaltools.openocd.win32_1.23.0.201904120827\\tools\\openocd\\bin\\openocd.exe" -f stm32.flash.7692193895184682188.cfg -s "C:\\C_Workspace\\PWM_LED" -s "C:\\Ac6\\SystemWorkbench\\plugins\\fr.ac6.mcu.debug_2.5.0.201904120827\\resources\\openocd\\st_scripts" -c "program Debug/PWM_LED.elf verify reset " -c shutdown 
+Open On-Chip Debugger 0.10.0+dev-00021-g524e8c8 (2019-04-12-08:48)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+padded zone erase set to 1
+adapter speed: 8000 kHz
+adapter_nsrst_delay: 100
+Info : clock speed 8000 kHz
+Info : STLINK v2.1 JTAG v36 API v2 M26 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.246689
+Info : Unable to match requested speed 8000 kHz, using 4000 kHz
+Info : Stlink adapter speed set to 4000 kHz
+Info : STM32L476RGTx.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Listening on port 3333 for gdb connections
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002548 msp: 0x20018000
+Info : Unable to match requested speed 8000 kHz, using 4000 kHz
+Info : Stlink adapter speed set to 4000 kHz
+Info : Unable to match requested speed 8000 kHz, using 4000 kHz
+adapter speed: 4000 kHz
+** Programming Started **
+auto erase enabled
+Info : Device id = 0x10076415
+Info : STM32L4xx flash size is 1024kb, base address is 0x8000000
+Info : Erase the padded zone before the write
+Error: Whole bank access must start at beginning of bank.
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x20000050 msp: 0x20018000
+wrote 12288 bytes from file Debug/PWM_LED.elf in 0.437484s (27.430 KiB/s)
+** Programming Finished **
+** Verify Started **
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20018000
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20018000
+verified 12080 bytes in 0.427909s (27.569 KiB/s)
+** Verified OK **
+** Resetting Target **
+shutdown command invoked
+13:08:02 **** Incremental Build of configuration Debug for project HSE_SYSCLK_8Mhz_Run2 ****
+make all 
+make: Nothing to be done for 'all'.
+13:08:02 **** Incremental Build of configuration Debug for project HelloWorldV4 ****
+make all 
+make: Nothing to be done for 'all'.
+13:08:03 **** Incremental Build of configuration Debug for project PLL_SYSCLK_HSI_Run2 ****
+make all 
+make: Nothing to be done for 'all'.
+13:08:03 **** Incremental Build of configuration Debug for project PWM1_timer_OC ****
+make all 
+Building file: ../Src/msp.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\PWM1_timer_OC\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/PWM1_timer_OC/Inc" -I"C:/C_Workspace/PWM1_timer_OC/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/PWM1_timer_OC/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/PWM1_timer_OC/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/PWM1_timer_OC/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/msp.d" -MT"Src/msp.o" -o "Src/msp.o" "../Src/msp.c"
+Finished building: ../Src/msp.c
+ 
+Building target: PWM1_timer_OC.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32L476RGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PWM1_timer_OC.elf" @"objects.list"   -lm
+Finished building target: PWM1_timer_OC.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "PWM1_timer_OC.elf" "PWM1_timer_OC.hex"
+arm-none-eabi-size "PWM1_timer_OC.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9264	     32	   1760	  11056	   2b30	PWM1_timer_OC.elf
+ 
+13:08:05 **** Incremental Build of configuration Debug for project PWM_LED ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\PWM_LED\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/PWM_LED/Inc" -I"C:/C_Workspace/PWM_LED/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/PWM_LED/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/PWM_LED/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/PWM_LED/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'printClockFreq':
+../Src/main.c:178:2: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  sprintf(msg, "SYSCLK: %ld\r\n", HAL_RCC_GetSysClockFreq());
+  ^~~~~~~
+../Src/main.c:178:2: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Src/main.c:178:2: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+Finished building: ../Src/main.c
+ 
+Building target: PWM_LED.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32L476RGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PWM_LED.elf" @"objects.list"   -lm
+Finished building target: PWM_LED.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "PWM_LED.elf" "PWM_LED.hex"
+arm-none-eabi-size "PWM_LED.elf"
+   text	   data	    bss	    dec	    hex	filename
+  11936	    136	   1888	  13960	   3688	PWM_LED.elf
+ 
+13:08:08 **** Incremental Build of configuration Debug for project TimeBase_10ms_Int ****
+make all 
+make: Nothing to be done for 'all'.
+13:08:08 **** Incremental Build of configuration Debug for project Timer_100ms_Run3 ****
+make all 
+make: Nothing to be done for 'all'.
+13:08:09 **** Incremental Build of configuration Debug for project Timer_InputCapture ****
+make all 
+make: Nothing to be done for 'all'.
+13:08:09 **** Incremental Build of configuration Debug for project Timer_InputCapture_HSIClock ****
+make all 
+make: Nothing to be done for 'all'.
+13:08:10 **** Incremental Build of configuration Debug for project Timer_OuputCompare ****
+make all 
+make: Nothing to be done for 'all'.
+13:08:10 **** Incremental Build of configuration Debug for project USART2_Example ****
+make all 
+make: Nothing to be done for 'all'.
+13:08:11 **** Incremental Build of configuration Debug for project USART2_Example2_Interupt ****
+make all 
+make: Nothing to be done for 'all'.
+13:08:22 **** Programming project PWM_LED on chip ****
+"C:\\Ac6\\SystemWorkbench\\plugins\\fr.ac6.mcu.externaltools.openocd.win32_1.23.0.201904120827\\tools\\openocd\\bin\\openocd.exe" -f stm32.flash.2049627795260064636.cfg -s "C:\\C_Workspace\\PWM_LED" -s "C:\\Ac6\\SystemWorkbench\\plugins\\fr.ac6.mcu.debug_2.5.0.201904120827\\resources\\openocd\\st_scripts" -c "program Debug/PWM_LED.elf verify reset " -c shutdown 
+Open On-Chip Debugger 0.10.0+dev-00021-g524e8c8 (2019-04-12-08:48)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+padded zone erase set to 1
+adapter speed: 8000 kHz
+adapter_nsrst_delay: 100
+Info : clock speed 8000 kHz
+Info : STLINK v2.1 JTAG v36 API v2 M26 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.249836
+Info : Unable to match requested speed 8000 kHz, using 4000 kHz
+Info : Stlink adapter speed set to 4000 kHz
+Info : STM32L476RGTx.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Listening on port 3333 for gdb connections
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x080024f4 msp: 0x20018000
+Info : Unable to match requested speed 8000 kHz, using 4000 kHz
+Info : Stlink adapter speed set to 4000 kHz
+Info : Unable to match requested speed 8000 kHz, using 4000 kHz
+adapter speed: 4000 kHz
+** Programming Started **
+auto erase enabled
+Info : Device id = 0x10076415
+Info : STM32L4xx flash size is 1024kb, base address is 0x8000000
+Info : Erase the padded zone before the write
+Error: Whole bank access must start at beginning of bank.
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x20000050 msp: 0x20018000
+wrote 12288 bytes from file Debug/PWM_LED.elf in 0.436687s (27.480 KiB/s)
+** Programming Finished **
+** Verify Started **
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20018000
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20018000
+verified 12080 bytes in 0.429561s (27.463 KiB/s)
 ** Verified OK **
 ** Resetting Target **
 shutdown command invoked

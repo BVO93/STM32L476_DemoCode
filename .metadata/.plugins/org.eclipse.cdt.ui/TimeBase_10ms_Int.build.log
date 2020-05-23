@@ -1,6 +1,6 @@
-11:38:13 **** Incremental Build of configuration Debug for project TimeBase_10ms_Int ****
+13:08:08 **** Incremental Build of configuration Debug for project TimeBase_10ms_Int ****
 make all 
 make: Nothing to be done for 'all'.
 
-11:38:13 Build Finished (took 418ms)
+13:08:08 Build Finished (took 386ms)
 

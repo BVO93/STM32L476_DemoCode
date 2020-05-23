@@ -1,6 +1,6 @@
-11:38:15 **** Incremental Build of configuration Debug for project Timer_InputCapture_HSIClock ****
+13:08:09 **** Incremental Build of configuration Debug for project Timer_InputCapture_HSIClock ****
 make all 
 make: Nothing to be done for 'all'.
 
-11:38:15 Build Finished (took 401ms)
+13:08:10 Build Finished (took 406ms)
 
