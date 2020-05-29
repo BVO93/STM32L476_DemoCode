@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="DelayElapsed" key="selection"/>
+		<item value="CAN_identifier_type" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="CAN_identifier_type"/>
 			<item value="DelayElapsed"/>
 			<item value="DELAYELEaP"/>
 			<item value="DELAYELEaP{S"/>
@@ -15,7 +16,6 @@
 			<item value="TIM_Output_Compare_and_PWM_modes"/>
 			<item value="HAL_TIM_IC_MspInit"/>
 			<item value="capturecallback"/>
-			<item value="TIM2_IRQHandler"/>
 		</list>
 		<list key="replacehistory">
 		</list>

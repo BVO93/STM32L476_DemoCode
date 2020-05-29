@@ -1,0 +1,266 @@
+/*
+ * main.c
+
+ *
+ *  Created on: 30 Apr 2020
+ *      Author: bjorn
+ */
+
+#include<string.h>
+#include "stm32l4xx_hal.h"
+#include "main.h"
+
+void SystemClockConfig(void);
+void Error_handler(void);
+void GPIO_Init(void);
+
+void UART2_Init(void);
+void printClockFreq(void);
+void CAN1_Init(void);
+void CAN1_Tx(void);
+void CAN1_Rx(void);
+
+
+// HANDLES
+UART_HandleTypeDef huart2;
+CAN_HandleTypeDef hcan1;
+
+// UART
+uint16_t lenOfData = 0;
+char *userData = "";
+char msg[100];
+
+
+int main() {
+
+	HAL_Init();
+	SystemClockConfig();
+	GPIO_Init();
+	UART2_Init();
+
+	// Print f of clock to make sure they are working
+	printClockFreq();
+	HAL_Delay(100);
+
+
+	memset(msg, 0, sizeof(msg));
+	sprintf(msg, "Timer init done \n");
+	lenOfData = strlen(msg);
+	HAL_UART_Transmit(&huart2, (uint8_t*) msg, lenOfData, HAL_MAX_DELAY);
+
+	CAN1_Init();
+
+
+	memset(msg, 0, sizeof(msg));
+	sprintf(msg, "Cqn init done \n");
+	lenOfData = strlen(msg);
+	HAL_UART_Transmit(&huart2, (uint8_t*) msg, lenOfData, HAL_MAX_DELAY);
+
+
+
+	if(HAL_CAN_Start(&hcan1) != HAL_OK){
+		Error_handler();
+	}
+
+	CAN1_Tx();
+
+	HAL_Delay(100);
+
+	CAN1_Rx();
+
+	while (1);
+
+	return 0;
+}
+
+
+
+// ******** SYSTEM CLOCK INIT ********** //
+void SystemClockConfig(void) {
+	RCC_OscInitTypeDef osc_init;
+	RCC_ClkInitTypeDef clk_init;
+
+	memset(&osc_init, 0, sizeof(osc_init));
+	osc_init.OscillatorType = RCC_OSCILLATORTYPE_HSI;
+	osc_init.HSIState = RCC_HSI_ON;
+	//osc_init.HSICalibrationValue =  To calibrate the value of the clk in steps of 80 Khz.
+	if (HAL_RCC_OscConfig(&osc_init) != HAL_OK) {
+		Error_handler();
+	}
+
+	clk_init.ClockType = RCC_CLOCKTYPE_SYSCLK | RCC_CLOCKTYPE_HCLK |
+	RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
+	clk_init.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;
+	clk_init.AHBCLKDivider = RCC_SYSCLK_DIV1;
+	clk_init.APB1CLKDivider = RCC_HCLK_DIV1;
+	clk_init.APB2CLKDivider = RCC_HCLK_DIV1;
+
+	if (HAL_RCC_ClockConfig(&clk_init, FLASH_LATENCY_0) != HAL_OK) {
+		Error_handler();
+	}
+
+	HAL_SYSTICK_Config(HAL_RCC_GetHCLKFreq() / 1000);
+	HAL_SYSTICK_CLKSourceConfig(SYSTICK_CLKSOURCE_HCLK);
+
+	return;
+}
+
+// ******** INITIALIZE UART ********** //
+void UART2_Init(void) {
+	huart2.Instance = USART2; // This is declared in stm32l476xx.h as the coorect adress
+	huart2.Init.BaudRate = 115200;
+	huart2.Init.WordLength = UART_WORDLENGTH_8B; 	// 8 bit word legth
+	huart2.Init.StopBits = UART_STOPBITS_1;
+	huart2.Init.Parity = UART_PARITY_NONE;
+	huart2.Init.Parity = UART_PARITY_NONE;
+	huart2.Init.Mode = UART_MODE_TX_RX;
+
+	if (HAL_UART_Init(&huart2) != HAL_OK) {	// Everything is set, now give adress of huart
+		Error_handler();								// Check if went ok
+	}
+
+	return;
+}
+
+// ******** PRINT CLOCK FREQ ********** //
+void printClockFreq(void){
+
+
+	HAL_UART_Transmit(&huart2, (uint8_t*) userData, lenOfData, HAL_MAX_DELAY);
+
+	memset(msg, 0, sizeof(msg));
+	sprintf(msg, "SYSCLK: %ld\r\n", HAL_RCC_GetSysClockFreq());
+	lenOfData = strlen(msg);
+	HAL_UART_Transmit(&huart2, (uint8_t*) msg, lenOfData, HAL_MAX_DELAY);
+
+	memset(msg, 0, sizeof(msg));
+	sprintf(msg, "HCLK: %ld\r\n", HAL_RCC_GetHCLKFreq());
+	lenOfData = strlen(msg);
+	HAL_UART_Transmit(&huart2, (uint8_t*) msg, lenOfData, HAL_MAX_DELAY);
+
+	memset(msg, 0, sizeof(msg));
+	sprintf(msg, "PCLK1: %ld\r\n", HAL_RCC_GetPCLK1Freq());
+	lenOfData = strlen(msg);
+	HAL_UART_Transmit(&huart2, (uint8_t*) msg, lenOfData, HAL_MAX_DELAY);
+
+	memset(msg, 0, sizeof(msg));
+	sprintf(msg, "PCLK2: %ld\r\n\n", HAL_RCC_GetPCLK2Freq());
+	lenOfData = strlen(msg);
+	HAL_UART_Transmit(&huart2, (uint8_t*) msg, lenOfData, HAL_MAX_DELAY);
+
+	return;
+}
+
+// ******** GPIO INIT ********** //
+void GPIO_Init(void) {
+	__HAL_RCC_GPIOA_CLK_ENABLE();
+	GPIO_InitTypeDef ledgpio;
+	ledgpio.Pin = GPIO_PIN_5;
+	ledgpio.Mode = GPIO_MODE_OUTPUT_PP;
+	ledgpio.Pull = GPIO_NOPULL;
+	HAL_GPIO_Init(GPIOA, &ledgpio);
+
+	GPIO_InitTypeDef pinD8;
+	pinD8.Pin = GPIO_PIN_8;
+	pinD8.Mode = GPIO_MODE_OUTPUT_PP;
+	pinD8.Pull = GPIO_NOPULL;
+	HAL_GPIO_Init(GPIOA, &pinD8);
+
+	GPIO_InitTypeDef pinD9;
+	pinD9.Pin = GPIO_PIN_9;
+	pinD9.Mode = GPIO_MODE_OUTPUT_PP;
+	pinD9.Pull = GPIO_NOPULL;
+	HAL_GPIO_Init(GPIOA, &pinD9);
+
+	// Set all pins low
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, 0);
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, 0);
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, 0);
+
+	return;
+}
+
+void CAN1_Init(void){
+	hcan1.Instance = CAN1;
+	hcan1.Init.Mode = CAN_MODE_LOOPBACK;
+	hcan1.Init.AutoBusOff = DISABLE;
+	hcan1.Init.AutoRetransmission = ENABLE;
+	hcan1.Init.AutoWakeUp = DISABLE;
+	hcan1.Init.ReceiveFifoLocked = DISABLE;
+	hcan1.Init.TimeTriggeredMode = DISABLE;
+	hcan1.Init.TransmitFifoPriority = DISABLE;
+
+	// settings acording to used CLK. THis case 16Mhz
+	hcan1.Init.Prescaler = 10;
+	hcan1.Init.SyncJumpWidth = CAN_SJW_1TQ;
+	hcan1.Init.TimeSeg1 = CAN_BS1_13TQ;
+	hcan1.Init.TimeSeg2 = CAN_BS2_2TQ;
+
+	if(HAL_CAN_Init(&hcan1) != HAL_OK){
+		Error_handler();
+	}
+
+
+}
+
+void CAN1_Rx(void){
+	CAN_RxHeaderTypeDef RxHeader;
+	uint8_t rcvdData[5] ;
+
+	// wait until the fifo is full
+	while( ! HAL_CAN_GetRxFifoFillLevel(&hcan1,CAN_RX_FIFO0));
+
+	if(HAL_CAN_GetRxMessage(&hcan1, CAN_RX_FIFO0, &RxHeader, rcvdData) != HAL_OK){
+		Error_handler();
+	}
+
+	memset(msg, 0, sizeof(msg));
+	sprintf(msg, "Message received: %s\n",rcvdData );
+	lenOfData = strlen(msg);
+	HAL_UART_Transmit(&huart2, (uint8_t*) msg, lenOfData, HAL_MAX_DELAY);
+
+}
+
+void CAN1_Tx(void){
+	CAN_TxHeaderTypeDef TxHeader;
+	uint32_t TxMailbox;
+	uint8_t ourMessage[5] = {'H', 'E', 'L', 'L', 'O'};
+
+
+	TxHeader.DLC = 5 ; 				// Number of bytes
+	TxHeader.StdId =  0x65D; 		//Random
+	TxHeader.IDE = CAN_ID_STD; 		// Standard frame length
+	TxHeader.RTR = CAN_RTR_DATA; 	// Request or data frame
+
+	if(HAL_CAN_AddTxMessage(&hcan1, &TxHeader, ourMessage, &TxMailbox ) != HAL_OK){
+		Error_handler();
+	}
+
+
+	while(HAL_CAN_IsTxMessagePending(&hcan1, TxMailbox));
+
+	memset(msg, 0, sizeof(msg));
+	sprintf(msg, "Transmit Of CAN is done ! \n");
+	lenOfData = strlen(msg);
+	HAL_UART_Transmit(&huart2, (uint8_t*) msg, lenOfData, HAL_MAX_DELAY);
+
+}
+
+
+
+
+
+
+void Error_handler(void) {
+
+	// If in error set D7 high and write message
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, 1);
+
+	memset(msg, 0, sizeof(msg));
+	sprintf(msg, "Something went wrong, stuck in error  !");
+	lenOfData = strlen(msg);
+	HAL_UART_Transmit(&huart2, (uint8_t*) msg, lenOfData, HAL_MAX_DELAY);
+	HAL_Delay(10);
+
+	while (1);
+}
