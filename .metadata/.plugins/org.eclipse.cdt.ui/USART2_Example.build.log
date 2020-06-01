@@ -1,6 +1,6 @@
-17:35:54 **** Incremental Build of configuration Debug for project USART2_Example ****
+17:03:07 **** Incremental Build of configuration Debug for project USART2_Example ****
 make all 
 make: Nothing to be done for 'all'.
 
-17:35:55 Build Finished (took 500ms)
+17:03:08 Build Finished (took 377ms)
 

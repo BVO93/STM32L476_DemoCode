@@ -1,6 +1,6 @@
-17:35:48 **** Incremental Build of configuration Debug for project HSE_SYSCLK_8Mhz_Run2 ****
+17:03:00 **** Incremental Build of configuration Debug for project HSE_SYSCLK_8Mhz_Run2 ****
 make all 
 make: Nothing to be done for 'all'.
 
-17:35:48 Build Finished (took 502ms)
+17:03:01 Build Finished (took 507ms)
 

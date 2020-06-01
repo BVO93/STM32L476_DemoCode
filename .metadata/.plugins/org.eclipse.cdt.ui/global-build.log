@@ -1,446 +1,169 @@
-16:42:18 **** Clean-only build of configuration Debug for project CAN_LoopBack_Interupt ****
-make clean 
-rm -rf *
- 
-17:29:30 **** Incremental Build of configuration Debug for project CAN_LoopBack ****
-make all 
-make: Nothing to be done for 'all'.
-17:29:31 **** Build of configuration Debug for project CAN_LoopBack_Interupt ****
+17:00:57 **** Build of configuration Debug for project CodeTemplate_Tim6Int ****
 make all 
 Building file: ../startup/startup_stm32l476xx.s
 Invoking: MCU GCC Assembler
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
 arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "startup/startup_stm32l476xx.o" "../startup/startup_stm32l476xx.s"
 Finished building: ../startup/startup_stm32l476xx.s
  
 Building file: ../Src/it.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CAN_LoopBack_Interupt/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/it.d" -MT"Src/it.o" -o "Src/it.o" "../Src/it.c"
-../Src/it.c: In function 'CAN1_TX_IRQHandler':
-../Src/it.c:22:22: error: 'hcan1' undeclared (first use in this function); did you mean 'scanf'?
-  HAL_CAN_IRQHandler(&hcan1);
-                      ^~~~~
-                      scanf
-../Src/it.c:22:22: note: each undeclared identifier is reported only once for each function it appears in
-Src/subdir.mk:30: recipe for target 'Src/it.o' failed
-make: *** [Src/it.o] Error 1
-17:29:32 **** Incremental Build of configuration Debug for project HSE_SYSCLK_8Mhz_Run2 ****
-make all 
-make: Nothing to be done for 'all'.
-17:29:33 **** Incremental Build of configuration Debug for project HelloWorldV4 ****
-make all 
-make: Nothing to be done for 'all'.
-17:29:34 **** Incremental Build of configuration Debug for project PLL_SYSCLK_HSI_Run2 ****
-make all 
-make: Nothing to be done for 'all'.
-17:29:35 **** Incremental Build of configuration Debug for project PWM1_timer_OC ****
-make all 
-make: Nothing to be done for 'all'.
-17:29:36 **** Incremental Build of configuration Debug for project PWM_LED ****
-make all 
-make: Nothing to be done for 'all'.
-17:29:36 **** Incremental Build of configuration Debug for project TimeBase_10ms_Int ****
-make all 
-make: Nothing to be done for 'all'.
-17:29:37 **** Incremental Build of configuration Debug for project Timer_100ms_Run3 ****
-make all 
-make: Nothing to be done for 'all'.
-17:29:38 **** Incremental Build of configuration Debug for project Timer_InputCapture ****
-make all 
-make: Nothing to be done for 'all'.
-17:29:39 **** Incremental Build of configuration Debug for project Timer_InputCapture_HSIClock ****
-make all 
-make: Nothing to be done for 'all'.
-17:29:39 **** Incremental Build of configuration Debug for project Timer_OuputCompare ****
-make all 
-make: Nothing to be done for 'all'.
-17:29:40 **** Incremental Build of configuration Debug for project USART2_Example ****
-make all 
-make: Nothing to be done for 'all'.
-17:29:41 **** Incremental Build of configuration Debug for project USART2_Example2_Interupt ****
-make all 
-make: Nothing to be done for 'all'.
-17:31:10 **** Incremental Build of configuration Debug for project CAN_LoopBack ****
-make all 
-make: Nothing to be done for 'all'.
-17:31:11 **** Incremental Build of configuration Debug for project CAN_LoopBack_Interupt ****
-make all 
-Building file: ../Src/it.c
-Invoking: MCU GCC Compiler
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CAN_LoopBack_Interupt/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/it.d" -MT"Src/it.o" -o "Src/it.o" "../Src/it.c"
-../Src/it.c: In function 'CAN1_TX_IRQHandler':
-../Src/it.c:22:22: error: 'hcan1' undeclared (first use in this function); did you mean 'scanf'?
-  HAL_CAN_IRQHandler(&hcan1);
-                      ^~~~~
-                      scanf
-../Src/it.c:22:22: note: each undeclared identifier is reported only once for each function it appears in
-Src/subdir.mk:30: recipe for target 'Src/it.o' failed
-make: *** [Src/it.o] Error 1
-17:31:12 **** Incremental Build of configuration Debug for project HSE_SYSCLK_8Mhz_Run2 ****
-make all 
-make: Nothing to be done for 'all'.
-17:31:13 **** Incremental Build of configuration Debug for project HelloWorldV4 ****
-make all 
-make: Nothing to be done for 'all'.
-17:31:13 **** Incremental Build of configuration Debug for project PLL_SYSCLK_HSI_Run2 ****
-make all 
-make: Nothing to be done for 'all'.
-17:31:14 **** Incremental Build of configuration Debug for project PWM1_timer_OC ****
-make all 
-make: Nothing to be done for 'all'.
-17:31:15 **** Incremental Build of configuration Debug for project PWM_LED ****
-make all 
-make: Nothing to be done for 'all'.
-17:31:15 **** Incremental Build of configuration Debug for project TimeBase_10ms_Int ****
-make all 
-make: Nothing to be done for 'all'.
-17:31:16 **** Incremental Build of configuration Debug for project Timer_100ms_Run3 ****
-make all 
-make: Nothing to be done for 'all'.
-17:31:17 **** Incremental Build of configuration Debug for project Timer_InputCapture ****
-make all 
-make: Nothing to be done for 'all'.
-17:31:17 **** Incremental Build of configuration Debug for project Timer_InputCapture_HSIClock ****
-make all 
-make: Nothing to be done for 'all'.
-17:31:18 **** Incremental Build of configuration Debug for project Timer_OuputCompare ****
-make all 
-make: Nothing to be done for 'all'.
-17:31:19 **** Incremental Build of configuration Debug for project USART2_Example ****
-make all 
-make: Nothing to be done for 'all'.
-17:31:19 **** Incremental Build of configuration Debug for project USART2_Example2_Interupt ****
-make all 
-make: Nothing to be done for 'all'.
-17:34:06 **** Incremental Build of configuration Debug for project CAN_LoopBack ****
-make all 
-make: Nothing to be done for 'all'.
-17:34:07 **** Incremental Build of configuration Debug for project CAN_LoopBack_Interupt ****
-make all 
-Building file: ../Src/it.c
-Invoking: MCU GCC Compiler
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CAN_LoopBack_Interupt/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/it.d" -MT"Src/it.o" -o "Src/it.o" "../Src/it.c"
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/it.d" -MT"Src/it.o" -o "Src/it.o" "../Src/it.c"
 Finished building: ../Src/it.c
  
 Building file: ../Src/main.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CAN_LoopBack_Interupt/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
-../Src/main.c: In function 'main':
-../Src/main.c:69:112: error: expected ')' before 'CAN_IT_TX'
-  if( HAL_CAN_ActivateNotification(&hcan1, CAN_IT_TX_MAILBOX_EMPTY | CAN_IT_RX_FIFO0_MSG_PENDING |CAN_IT_BUSOFF CAN_IT_TX) != HAL_OK){
-                                                                                                                ^~~~~~~~~
-../Src/main.c: In function 'HAL_CAN_ErrorCallback':
-../Src/main.c:325:31: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
-  sprintf(msg, "Error happend %s\n");
-                              ~^
-Src/subdir.mk:30: recipe for target 'Src/main.o' failed
-make: *** [Src/main.o] Error 1
-17:34:09 **** Incremental Build of configuration Debug for project HSE_SYSCLK_8Mhz_Run2 ****
-make all 
-make: Nothing to be done for 'all'.
-17:34:09 **** Incremental Build of configuration Debug for project HelloWorldV4 ****
-make all 
-make: Nothing to be done for 'all'.
-17:34:10 **** Incremental Build of configuration Debug for project PLL_SYSCLK_HSI_Run2 ****
-make all 
-make: Nothing to be done for 'all'.
-17:34:11 **** Incremental Build of configuration Debug for project PWM1_timer_OC ****
-make all 
-make: Nothing to be done for 'all'.
-17:34:11 **** Incremental Build of configuration Debug for project PWM_LED ****
-make all 
-make: Nothing to be done for 'all'.
-17:34:12 **** Incremental Build of configuration Debug for project TimeBase_10ms_Int ****
-make all 
-make: Nothing to be done for 'all'.
-17:34:13 **** Incremental Build of configuration Debug for project Timer_100ms_Run3 ****
-make all 
-make: Nothing to be done for 'all'.
-17:34:13 **** Incremental Build of configuration Debug for project Timer_InputCapture ****
-make all 
-make: Nothing to be done for 'all'.
-17:34:14 **** Incremental Build of configuration Debug for project Timer_InputCapture_HSIClock ****
-make all 
-make: Nothing to be done for 'all'.
-17:34:15 **** Incremental Build of configuration Debug for project Timer_OuputCompare ****
-make all 
-make: Nothing to be done for 'all'.
-17:34:15 **** Incremental Build of configuration Debug for project USART2_Example ****
-make all 
-make: Nothing to be done for 'all'.
-17:34:16 **** Incremental Build of configuration Debug for project USART2_Example2_Interupt ****
-make all 
-make: Nothing to be done for 'all'.
-17:35:00 **** Incremental Build of configuration Debug for project CAN_LoopBack ****
-make all 
-make: Nothing to be done for 'all'.
-17:35:01 **** Incremental Build of configuration Debug for project CAN_LoopBack_Interupt ****
-make all 
-Building file: ../Src/main.c
-Invoking: MCU GCC Compiler
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CAN_LoopBack_Interupt/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
-../Src/main.c: In function 'HAL_CAN_ErrorCallback':
-../Src/main.c:326:31: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
-  sprintf(msg, "Error happend %s\n");
-                              ~^
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
 Finished building: ../Src/main.c
  
 Building file: ../Src/msp.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CAN_LoopBack_Interupt/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/msp.d" -MT"Src/msp.o" -o "Src/msp.o" "../Src/msp.c"
-../Src/msp.c: In function 'HAL_CAN_MspInit':
-../Src/msp.c:51:2: warning: implicit declaration of function 'HAL_NVIC_EnableIRQN'; did you mean 'HAL_NVIC_EnableIRQ'? [-Wimplicit-function-declaration]
-  HAL_NVIC_EnableIRQN(CAN1_TX_IRQn);
-  ^~~~~~~~~~~~~~~~~~~
-  HAL_NVIC_EnableIRQ
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/msp.d" -MT"Src/msp.o" -o "Src/msp.o" "../Src/msp.c"
 Finished building: ../Src/msp.c
  
 Building file: ../Src/syscalls.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CAN_LoopBack_Interupt/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" -o "Src/syscalls.o" "../Src/syscalls.c"
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" -o "Src/syscalls.o" "../Src/syscalls.c"
 Finished building: ../Src/syscalls.c
  
 Building file: ../Src/system_stm32l4xx.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CAN_LoopBack_Interupt/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/system_stm32l4xx.d" -MT"Src/system_stm32l4xx.o" -o "Src/system_stm32l4xx.o" "../Src/system_stm32l4xx.c"
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/system_stm32l4xx.d" -MT"Src/system_stm32l4xx.o" -o "Src/system_stm32l4xx.o" "../Src/system_stm32l4xx.c"
 Finished building: ../Src/system_stm32l4xx.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CAN_LoopBack_Interupt/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c"
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c
- 
-Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_can.c
-Invoking: MCU GCC Compiler
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CAN_LoopBack_Interupt/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_can.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_can.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_can.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_can.c"
-Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_can.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CAN_LoopBack_Interupt/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c"
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CAN_LoopBack_Interupt/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c"
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CAN_LoopBack_Interupt/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c"
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CAN_LoopBack_Interupt/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c"
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CAN_LoopBack_Interupt/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c"
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CAN_LoopBack_Interupt/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c"
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CAN_LoopBack_Interupt/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c"
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CAN_LoopBack_Interupt/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c"
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CAN_LoopBack_Interupt/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c"
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CAN_LoopBack_Interupt/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c"
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CAN_LoopBack_Interupt/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c"
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CAN_LoopBack_Interupt/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c"
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CAN_LoopBack_Interupt/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c"
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CAN_LoopBack_Interupt/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c"
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CAN_LoopBack_Interupt/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c"
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CAN_LoopBack_Interupt/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c"
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CAN_LoopBack_Interupt/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c"
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c
  
 Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c
 Invoking: MCU GCC Compiler
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CAN_LoopBack_Interupt/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c"
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c"
 Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c
  
-Building target: CAN_LoopBack_Interupt.elf
+Building target: CodeTemplate_Tim6Int.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32L476RGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "CAN_LoopBack_Interupt.elf" @"objects.list"   -lm
-Src/msp.o: In function `HAL_CAN_MspInit':
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug/../Src/msp.c:51: undefined reference to `HAL_NVIC_EnableIRQN'
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug/../Src/msp.c:52: undefined reference to `HAL_NVIC_EnableIRQN'
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug/../Src/msp.c:53: undefined reference to `HAL_NVIC_EnableIRQN'
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug/../Src/msp.c:54: undefined reference to `HAL_NVIC_EnableIRQN'
-collect2.exe: error: ld returned 1 exit status
-make: *** [CAN_LoopBack_Interupt.elf] Error 1
-makefile:35: recipe for target 'CAN_LoopBack_Interupt.elf' failed
-17:35:23 **** Incremental Build of configuration Debug for project HSE_SYSCLK_8Mhz_Run2 ****
-make all 
-make: Nothing to be done for 'all'.
-17:35:23 **** Incremental Build of configuration Debug for project HelloWorldV4 ****
-make all 
-make: Nothing to be done for 'all'.
-17:35:24 **** Incremental Build of configuration Debug for project PLL_SYSCLK_HSI_Run2 ****
-make all 
-make: Nothing to be done for 'all'.
-17:35:25 **** Incremental Build of configuration Debug for project PWM1_timer_OC ****
-make all 
-make: Nothing to be done for 'all'.
-17:35:25 **** Incremental Build of configuration Debug for project PWM_LED ****
-make all 
-make: Nothing to be done for 'all'.
-17:35:26 **** Incremental Build of configuration Debug for project TimeBase_10ms_Int ****
-make all 
-make: Nothing to be done for 'all'.
-17:35:27 **** Incremental Build of configuration Debug for project Timer_100ms_Run3 ****
-make all 
-make: Nothing to be done for 'all'.
-17:35:27 **** Incremental Build of configuration Debug for project Timer_InputCapture ****
-make all 
-make: Nothing to be done for 'all'.
-17:35:28 **** Incremental Build of configuration Debug for project Timer_InputCapture_HSIClock ****
-make all 
-make: Nothing to be done for 'all'.
-17:35:29 **** Incremental Build of configuration Debug for project Timer_OuputCompare ****
-make all 
-make: Nothing to be done for 'all'.
-17:35:29 **** Incremental Build of configuration Debug for project USART2_Example ****
-make all 
-make: Nothing to be done for 'all'.
-17:35:30 **** Incremental Build of configuration Debug for project USART2_Example2_Interupt ****
-make all 
-make: Nothing to be done for 'all'.
-17:35:44 **** Incremental Build of configuration Debug for project CAN_LoopBack ****
-make all 
-make: Nothing to be done for 'all'.
-17:35:45 **** Incremental Build of configuration Debug for project CAN_LoopBack_Interupt ****
-make all 
-Building file: ../Src/msp.c
-Invoking: MCU GCC Compiler
-C:\C_Workspace\CAN_LoopBack_Interupt\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CAN_LoopBack_Interupt/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CAN_LoopBack_Interupt/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/msp.d" -MT"Src/msp.o" -o "Src/msp.o" "../Src/msp.c"
-Finished building: ../Src/msp.c
- 
-Building target: CAN_LoopBack_Interupt.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32L476RGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "CAN_LoopBack_Interupt.elf" @"objects.list"   -lm
-Finished building target: CAN_LoopBack_Interupt.elf
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32L476RGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "CodeTemplate_Tim6Int.elf" @"objects.list"   -lm
+Finished building target: CodeTemplate_Tim6Int.elf
  
 make --no-print-directory post-build
 Generating hex and Printing size information:
-arm-none-eabi-objcopy -O ihex "CAN_LoopBack_Interupt.elf" "CAN_LoopBack_Interupt.hex"
-arm-none-eabi-size "CAN_LoopBack_Interupt.elf"
+arm-none-eabi-objcopy -O ihex "CodeTemplate_Tim6Int.elf" "CodeTemplate_Tim6Int.hex"
+arm-none-eabi-size "CodeTemplate_Tim6Int.elf"
    text	   data	    bss	    dec	    hex	filename
-  13056	    136	   1864	  15056	   3ad0	CAN_LoopBack_Interupt.elf
+  10960	    136	   1888	  12984	   32b8	CodeTemplate_Tim6Int.elf
  
-17:35:48 **** Incremental Build of configuration Debug for project HSE_SYSCLK_8Mhz_Run2 ****
-make all 
-make: Nothing to be done for 'all'.
-17:35:48 **** Incremental Build of configuration Debug for project HelloWorldV4 ****
-make all 
-make: Nothing to be done for 'all'.
-17:35:49 **** Incremental Build of configuration Debug for project PLL_SYSCLK_HSI_Run2 ****
-make all 
-make: Nothing to be done for 'all'.
-17:35:50 **** Incremental Build of configuration Debug for project PWM1_timer_OC ****
-make all 
-make: Nothing to be done for 'all'.
-17:35:50 **** Incremental Build of configuration Debug for project PWM_LED ****
-make all 
-make: Nothing to be done for 'all'.
-17:35:51 **** Incremental Build of configuration Debug for project TimeBase_10ms_Int ****
-make all 
-make: Nothing to be done for 'all'.
-17:35:52 **** Incremental Build of configuration Debug for project Timer_100ms_Run3 ****
-make all 
-make: Nothing to be done for 'all'.
-17:35:52 **** Incremental Build of configuration Debug for project Timer_InputCapture ****
-make all 
-make: Nothing to be done for 'all'.
-17:35:53 **** Incremental Build of configuration Debug for project Timer_InputCapture_HSIClock ****
-make all 
-make: Nothing to be done for 'all'.
-17:35:54 **** Incremental Build of configuration Debug for project Timer_OuputCompare ****
-make all 
-make: Nothing to be done for 'all'.
-17:35:54 **** Incremental Build of configuration Debug for project USART2_Example ****
-make all 
-make: Nothing to be done for 'all'.
-17:35:55 **** Incremental Build of configuration Debug for project USART2_Example2_Interupt ****
-make all 
-make: Nothing to be done for 'all'.
-17:36:24 **** Programming project CAN_LoopBack_Interupt on chip ****
-"C:\\Ac6\\SystemWorkbench\\plugins\\fr.ac6.mcu.externaltools.openocd.win32_1.23.0.201904120827\\tools\\openocd\\bin\\openocd.exe" -f stm32.flash.4749311713802097437.cfg -s "C:\\C_Workspace\\CAN_LoopBack_Interupt" -s "C:\\Ac6\\SystemWorkbench\\plugins\\fr.ac6.mcu.debug_2.5.0.201904120827\\resources\\openocd\\st_scripts" -c "program Debug/CAN_LoopBack_Interupt.elf verify reset " -c shutdown 
+17:01:18 **** Erasing chip ... ****
+"C:\\Ac6\\SystemWorkbench\\plugins\\fr.ac6.mcu.externaltools.openocd.win32_1.23.0.201904120827\\tools\\openocd\\bin\\openocd.exe" -f stm32.flash.319373846516840463.cfg -s "C:\\C_Workspace\\CodeTemplate_Tim6Int" -s "C:\\Ac6\\SystemWorkbench\\plugins\\fr.ac6.mcu.debug_2.5.0.201904120827\\resources\\openocd\\st_scripts" "-c init" "-c reset halt" "-c flash erase_sector 0 0 last" "-c exit" 
 Open On-Chip Debugger 0.10.0+dev-00021-g524e8c8 (2019-04-12-08:48)
 Licensed under GNU GPL v2
 For bug reports, read
@@ -453,13 +176,298 @@ adapter_nsrst_delay: 100
 Info : clock speed 8000 kHz
 Info : STLINK v2.1 JTAG v36 API v2 M26 VID 0x0483 PID 0x374B
 Info : using stlink api v2
-Info : Target voltage: 3.243541
+Info : Target voltage: 3.247800
 Info : Unable to match requested speed 8000 kHz, using 4000 kHz
 Info : Stlink adapter speed set to 4000 kHz
 Info : STM32L476RGTx.cpu: hardware has 6 breakpoints, 4 watchpoints
 Info : Listening on port 3333 for gdb connections
 target halted due to debug-request, current mode: Thread 
-xPSR: 0x01000000 pc: 0x080024bc msp: 0x20018000
+xPSR: 0x01000000 pc: 0x080020ec msp: 0x20018000
+Info : Device id = 0x10076415
+Info : STM32L4xx flash size is 1024kb, base address is 0x8000000
+erased sectors 0 through 511 on flash bank 0 in 12.261993s
+17:01:46 **** Programming project CodeTemplate_Tim6Int on chip ****
+"C:\\Ac6\\SystemWorkbench\\plugins\\fr.ac6.mcu.externaltools.openocd.win32_1.23.0.201904120827\\tools\\openocd\\bin\\openocd.exe" -f stm32.flash.8726985495469578437.cfg -s "C:\\C_Workspace\\CodeTemplate_Tim6Int" -s "C:\\Ac6\\SystemWorkbench\\plugins\\fr.ac6.mcu.debug_2.5.0.201904120827\\resources\\openocd\\st_scripts" -c "program Debug/CodeTemplate_Tim6Int.elf verify reset " -c shutdown 
+Open On-Chip Debugger 0.10.0+dev-00021-g524e8c8 (2019-04-12-08:48)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+padded zone erase set to 1
+adapter speed: 8000 kHz
+adapter_nsrst_delay: 100
+Info : clock speed 8000 kHz
+Info : STLINK v2.1 JTAG v36 API v2 M26 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.254104
+Info : Unable to match requested speed 8000 kHz, using 4000 kHz
+Info : Stlink adapter speed set to 4000 kHz
+Info : STM32L476RGTx.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Listening on port 3333 for gdb connections
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0xfffffffe msp: 0xfffffffc
+Info : Unable to match requested speed 8000 kHz, using 4000 kHz
+Info : Stlink adapter speed set to 4000 kHz
+Info : Unable to match requested speed 8000 kHz, using 4000 kHz
+adapter speed: 4000 kHz
+** Programming Started **
+auto erase enabled
+Info : Device id = 0x10076415
+Info : STM32L4xx flash size is 1024kb, base address is 0x8000000
+Info : Erase the padded zone before the write
+Error: Whole bank access must start at beginning of bank.
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x20000050 msp: 0xfffffffc
+wrote 12288 bytes from file Debug/CodeTemplate_Tim6Int.elf in 0.436423s (27.496 KiB/s)
+** Programming Finished **
+** Verify Started **
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0xfffffffc
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0xfffffffc
+verified 11104 bytes in 0.402423s (26.946 KiB/s)
+** Verified OK **
+** Resetting Target **
+shutdown command invoked
+17:02:40 **** Incremental Build of configuration Debug for project CAN_LoopBack ****
+make all 
+make: Nothing to be done for 'all'.
+17:02:41 **** Incremental Build of configuration Debug for project CAN_LoopBack_Interupt ****
+make all 
+make: Nothing to be done for 'all'.
+17:02:41 **** Incremental Build of configuration Debug for project CodeTemplate_Tim6Int ****
+make all 
+Building file: ../startup/startup_stm32l476xx.s
+Invoking: MCU GCC Assembler
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "startup/startup_stm32l476xx.o" "../startup/startup_stm32l476xx.s"
+Finished building: ../startup/startup_stm32l476xx.s
+ 
+Building file: ../Src/it.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/it.d" -MT"Src/it.o" -o "Src/it.o" "../Src/it.c"
+Finished building: ../Src/it.c
+ 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/msp.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/msp.d" -MT"Src/msp.o" -o "Src/msp.o" "../Src/msp.c"
+Finished building: ../Src/msp.c
+ 
+Building file: ../Src/syscalls.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" -o "Src/syscalls.o" "../Src/syscalls.c"
+Finished building: ../Src/syscalls.c
+ 
+Building file: ../Src/system_stm32l4xx.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/system_stm32l4xx.d" -MT"Src/system_stm32l4xx.o" -o "Src/system_stm32l4xx.o" "../Src/system_stm32l4xx.c"
+Finished building: ../Src/system_stm32l4xx.c
+ 
+Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c"
+Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c
+ 
+Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c"
+Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c
+ 
+Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c"
+Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c
+ 
+Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c"
+Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c
+ 
+Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c"
+Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c
+ 
+Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c"
+Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c
+ 
+Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c"
+Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c
+ 
+Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c"
+Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c
+ 
+Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c"
+Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c
+ 
+Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c"
+Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c
+ 
+Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c"
+Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c
+ 
+Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c"
+Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c
+ 
+Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c"
+Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c
+ 
+Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c"
+Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c
+ 
+Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c"
+Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c
+ 
+Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c"
+Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c
+ 
+Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c"
+Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c
+ 
+Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c"
+Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c
+ 
+Building file: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\CodeTemplate_Tim6Int\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/CodeTemplate_Tim6Int/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/CodeTemplate_Tim6Int/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.o" -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.o" "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c"
+Finished building: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c
+ 
+Building target: CodeTemplate_Tim6Int.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32L476RGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "CodeTemplate_Tim6Int.elf" @"objects.list"   -lm
+Finished building target: CodeTemplate_Tim6Int.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "CodeTemplate_Tim6Int.elf" "CodeTemplate_Tim6Int.hex"
+arm-none-eabi-size "CodeTemplate_Tim6Int.elf"
+   text	   data	    bss	    dec	    hex	filename
+  11016	    136	   1888	  13040	   32f0	CodeTemplate_Tim6Int.elf
+ 
+17:03:00 **** Incremental Build of configuration Debug for project HSE_SYSCLK_8Mhz_Run2 ****
+make all 
+make: Nothing to be done for 'all'.
+17:03:01 **** Incremental Build of configuration Debug for project HelloWorldV4 ****
+make all 
+make: Nothing to be done for 'all'.
+17:03:02 **** Incremental Build of configuration Debug for project PLL_SYSCLK_HSI_Run2 ****
+make all 
+make: Nothing to be done for 'all'.
+17:03:02 **** Incremental Build of configuration Debug for project PWM1_timer_OC ****
+make all 
+make: Nothing to be done for 'all'.
+17:03:03 **** Incremental Build of configuration Debug for project PWM_LED ****
+make all 
+make: Nothing to be done for 'all'.
+17:03:04 **** Incremental Build of configuration Debug for project TimeBase_10ms_Int ****
+make all 
+Building target: TimeBase_10ms_Int.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32L476RGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "TimeBase_10ms_Int.elf" @"objects.list"   -lm
+Finished building target: TimeBase_10ms_Int.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "TimeBase_10ms_Int.elf" "TimeBase_10ms_Int.hex"
+arm-none-eabi-size "TimeBase_10ms_Int.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2568	     32	   1632	   4232	   1088	TimeBase_10ms_Int.elf
+ 
+17:03:05 **** Incremental Build of configuration Debug for project Timer_100ms_Run3 ****
+make all 
+make: Nothing to be done for 'all'.
+17:03:06 **** Incremental Build of configuration Debug for project Timer_InputCapture ****
+make all 
+make: Nothing to be done for 'all'.
+17:03:06 **** Incremental Build of configuration Debug for project Timer_InputCapture_HSIClock ****
+make all 
+make: Nothing to be done for 'all'.
+17:03:07 **** Incremental Build of configuration Debug for project Timer_OuputCompare ****
+make all 
+make: Nothing to be done for 'all'.
+17:03:07 **** Incremental Build of configuration Debug for project USART2_Example ****
+make all 
+make: Nothing to be done for 'all'.
+17:03:08 **** Incremental Build of configuration Debug for project USART2_Example2_Interupt ****
+make all 
+make: Nothing to be done for 'all'.
+17:03:19 **** Programming project CodeTemplate_Tim6Int on chip ****
+"C:\\Ac6\\SystemWorkbench\\plugins\\fr.ac6.mcu.externaltools.openocd.win32_1.23.0.201904120827\\tools\\openocd\\bin\\openocd.exe" -f stm32.flash.4527437634038413277.cfg -s "C:\\C_Workspace\\CodeTemplate_Tim6Int" -s "C:\\Ac6\\SystemWorkbench\\plugins\\fr.ac6.mcu.debug_2.5.0.201904120827\\resources\\openocd\\st_scripts" -c "program Debug/CodeTemplate_Tim6Int.elf verify reset " -c shutdown 
+Open On-Chip Debugger 0.10.0+dev-00021-g524e8c8 (2019-04-12-08:48)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+padded zone erase set to 1
+adapter speed: 8000 kHz
+adapter_nsrst_delay: 100
+Info : clock speed 8000 kHz
+Info : STLINK v2.1 JTAG v36 API v2 M26 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.250952
+Info : Unable to match requested speed 8000 kHz, using 4000 kHz
+Info : Stlink adapter speed set to 4000 kHz
+Info : STM32L476RGTx.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Listening on port 3333 for gdb connections
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x080020ec msp: 0x20018000
 Info : Unable to match requested speed 8000 kHz, using 4000 kHz
 Info : Stlink adapter speed set to 4000 kHz
 Info : Unable to match requested speed 8000 kHz, using 4000 kHz
@@ -472,14 +480,14 @@ Info : Erase the padded zone before the write
 Error: Whole bank access must start at beginning of bank.
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x20000050 msp: 0x20018000
-wrote 14336 bytes from file Debug/CAN_LoopBack_Interupt.elf in 0.506069s (27.664 KiB/s)
+wrote 12288 bytes from file Debug/CodeTemplate_Tim6Int.elf in 0.437029s (27.458 KiB/s)
 ** Programming Finished **
 ** Verify Started **
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20018000
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20018000
-verified 13200 bytes in 0.462726s (27.858 KiB/s)
+verified 11160 bytes in 0.403542s (27.007 KiB/s)
 ** Verified OK **
 ** Resetting Target **
 shutdown command invoked

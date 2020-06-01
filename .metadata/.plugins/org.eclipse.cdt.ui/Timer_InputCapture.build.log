@@ -1,6 +1,6 @@
-17:35:52 **** Incremental Build of configuration Debug for project Timer_InputCapture ****
+17:03:06 **** Incremental Build of configuration Debug for project Timer_InputCapture ****
 make all 
 make: Nothing to be done for 'all'.
 
-17:35:53 Build Finished (took 497ms)
+17:03:06 Build Finished (took 378ms)
 

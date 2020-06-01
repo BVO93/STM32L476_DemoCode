@@ -1,6 +1,6 @@
-17:35:52 **** Incremental Build of configuration Debug for project Timer_100ms_Run3 ****
+17:03:05 **** Incremental Build of configuration Debug for project Timer_100ms_Run3 ****
 make all 
 make: Nothing to be done for 'all'.
 
-17:35:52 Build Finished (took 496ms)
+17:03:06 Build Finished (took 379ms)
 
