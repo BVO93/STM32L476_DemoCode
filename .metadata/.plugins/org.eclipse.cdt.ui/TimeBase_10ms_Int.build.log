@@ -1,17 +1,6 @@
-17:03:04 **** Incremental Build of configuration Debug for project TimeBase_10ms_Int ****
+19:10:57 **** Incremental Build of configuration Debug for project TimeBase_10ms_Int ****
 make all 
-Building target: TimeBase_10ms_Int.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32L476RGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "TimeBase_10ms_Int.elf" @"objects.list"   -lm
-Finished building target: TimeBase_10ms_Int.elf
- 
-make --no-print-directory post-build
-Generating hex and Printing size information:
-arm-none-eabi-objcopy -O ihex "TimeBase_10ms_Int.elf" "TimeBase_10ms_Int.hex"
-arm-none-eabi-size "TimeBase_10ms_Int.elf"
-   text	   data	    bss	    dec	    hex	filename
-   2568	     32	   1632	   4232	   1088	TimeBase_10ms_Int.elf
- 
+make: Nothing to be done for 'all'.
 
-17:03:05 Build Finished (took 1s.346ms)
+19:10:58 Build Finished (took 437ms)
 

@@ -1,6 +1,6 @@
-17:03:07 **** Incremental Build of configuration Debug for project Timer_OuputCompare ****
+19:11:00 **** Incremental Build of configuration Debug for project Timer_OuputCompare ****
 make all 
 make: Nothing to be done for 'all'.
 
-17:03:07 Build Finished (took 378ms)
+19:11:00 Build Finished (took 440ms)
 
