@@ -30,7 +30,7 @@ void HAL_TIM_Base_MspInit(TIM_HandleTypeDef *htimer){
 	// 2 EnableIRQ of TIM6
 	HAL_NVIC_EnableIRQ(TIM6_DAC_IRQn);
 	// 3 set op priority
-	HAL_NVIC_SetPriority(TIM6_DAC_IRQn, 15, 0);
+	HAL_NVIC_SetPriority(TIM6_DAC_IRQn, 1, 0);
 }
 
 
@@ -42,6 +42,7 @@ void HAL_UART_MspInit(UART_HandleTypeDef *huart)
 
 	// 1. Enable the clock for UART , GPIO, TIMER
 	__HAL_RCC_USART2_CLK_ENABLE();
+	 __HAL_RCC_USART2_CLK_SLEEP_DISABLE();
 	__HAL_RCC_GPIOA_CLK_ENABLE();
 
 	//2. Pin muxing config
@@ -51,7 +52,6 @@ void HAL_UART_MspInit(UART_HandleTypeDef *huart)
 	gpio_uart.Speed = GPIO_SPEED_FREQ_LOW;
 	gpio_uart.Alternate = GPIO_AF7_USART2;   // Goes wrong a lot
 	HAL_GPIO_Init(GPIOA, &gpio_uart);
-	HAL_NVIC_EnableIRQ(TIM6_DAC_IRQn);
 
 	//Only change pin, the rest is same
 	gpio_uart.Pin = GPIO_PIN_3;   		// UART2 RX

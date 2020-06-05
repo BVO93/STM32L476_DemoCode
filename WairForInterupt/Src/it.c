@@ -8,7 +8,7 @@
 #include "main.h"
 
 extern TIM_HandleTypeDef htimer6;;
-
+extern UART_HandleTypeDef huart2;
 // make a global tick
 // Global tick calls habndler, that all we need.
 void SysTick_Handler(void)
@@ -25,6 +25,10 @@ void EXTI15_10_IRQHandler(void)
 	HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_13);
 }
 
+void USART2_IRQHandler(void)
+{
+	HAL_UART_IRQHandler(&huart2);
+}
 
 
 
