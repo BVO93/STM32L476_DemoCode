@@ -157,3 +157,563 @@ arm-none-eabi-size "WairForInterupt.elf"
    text	   data	    bss	    dec	    hex	filename
   10672	    168	   1824	  12664	   3178	WairForInterupt.elf
  
+10:27:00 **** Build of configuration Debug for project BckupSRAM_Standby ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\BckupSRAM_Standby\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/BckupSRAM_Standby/Inc" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/msp.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\BckupSRAM_Standby\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/BckupSRAM_Standby/Inc" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/msp.d" -MT"Src/msp.o" -o "Src/msp.o" "../Src/msp.c"
+Finished building: ../Src/msp.c
+ 
+Building target: BckupSRAM_Standby.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32L476RGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "BckupSRAM_Standby.elf" @"objects.list"   -lm
+Finished building target: BckupSRAM_Standby.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "BckupSRAM_Standby.elf" "BckupSRAM_Standby.hex"
+arm-none-eabi-size "BckupSRAM_Standby.elf"
+   text	   data	    bss	    dec	    hex	filename
+  10568	    136	   1888	  12592	   3130	BckupSRAM_Standby.elf
+ 
+10:27:04 **** Build of configuration Debug for project CAN_LoopBack ****
+make all 
+make: Nothing to be done for 'all'.
+10:27:05 **** Build of configuration Debug for project CAN_LoopBack_Interupt ****
+make all 
+make: Nothing to be done for 'all'.
+10:27:06 **** Build of configuration Debug for project CodeTemplate_Tim6Int ****
+make all 
+make: Nothing to be done for 'all'.
+10:27:06 **** Build of configuration Debug for project HSE_SYSCLK_8Mhz_Run2 ****
+make all 
+make: Nothing to be done for 'all'.
+10:27:07 **** Build of configuration Debug for project HelloWorldV4 ****
+make all 
+make: Nothing to be done for 'all'.
+10:27:07 **** Build of configuration Debug for project LowPower_SleepOnExit_Tim6 ****
+make all 
+make: Nothing to be done for 'all'.
+10:27:08 **** Build of configuration Debug for project PLL_SYSCLK_HSI_Run2 ****
+make all 
+make: Nothing to be done for 'all'.
+10:27:09 **** Build of configuration Debug for project PWM1_timer_OC ****
+make all 
+make: Nothing to be done for 'all'.
+10:27:09 **** Build of configuration Debug for project PWM_LED ****
+make all 
+make: Nothing to be done for 'all'.
+10:27:10 **** Build of configuration Debug for project TimeBase_10ms_Int ****
+make all 
+make: Nothing to be done for 'all'.
+10:27:10 **** Build of configuration Debug for project Timer_100ms_Run3 ****
+make all 
+make: Nothing to be done for 'all'.
+10:27:11 **** Build of configuration Debug for project Timer_InputCapture ****
+make all 
+make: Nothing to be done for 'all'.
+10:27:12 **** Build of configuration Debug for project Timer_InputCapture_HSIClock ****
+make all 
+make: Nothing to be done for 'all'.
+10:27:12 **** Build of configuration Debug for project Timer_OuputCompare ****
+make all 
+make: Nothing to be done for 'all'.
+10:27:13 **** Build of configuration Debug for project USART2_Example ****
+make all 
+make: Nothing to be done for 'all'.
+10:27:14 **** Build of configuration Debug for project USART2_Example2_Interupt ****
+make all 
+make: Nothing to be done for 'all'.
+10:27:14 **** Build of configuration Debug for project WairForEvent ****
+make all 
+make: Nothing to be done for 'all'.
+10:27:15 **** Build of configuration Debug for project WairForInterupt ****
+make all 
+make: Nothing to be done for 'all'.
+10:27:26 **** Programming project BckupSRAM_Standby on chip ****
+"C:\\Ac6\\SystemWorkbench\\plugins\\fr.ac6.mcu.externaltools.openocd.win32_1.23.0.201904120827\\tools\\openocd\\bin\\openocd.exe" -f stm32.flash.7932951539390830795.cfg -s "C:\\C_Workspace\\BckupSRAM_Standby" -s "C:\\Ac6\\SystemWorkbench\\plugins\\fr.ac6.mcu.debug_2.5.0.201904120827\\resources\\openocd\\st_scripts" -c "program Debug/CodeTemplate_Tim6Int.elf verify reset " -c shutdown 
+Open On-Chip Debugger 0.10.0+dev-00021-g524e8c8 (2019-04-12-08:48)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+padded zone erase set to 1
+adapter speed: 8000 kHz
+adapter_nsrst_delay: 100
+Info : clock speed 8000 kHz
+Info : STLINK v2.1 JTAG v36 API v2 M26 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.247800
+Info : Unable to match requested speed 8000 kHz, using 4000 kHz
+Info : Stlink adapter speed set to 4000 kHz
+Info : STM32L476RGTx.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Listening on port 3333 for gdb connections
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08002068 msp: 0x20018000
+Info : Unable to match requested speed 8000 kHz, using 4000 kHz
+Info : Stlink adapter speed set to 4000 kHz
+Info : Unable to match requested speed 8000 kHz, using 4000 kHz
+adapter speed: 4000 kHz
+** Programming Started **
+auto erase enabled
+Info : Device id = 0x10076415
+Info : STM32L4xx flash size is 1024kb, base address is 0x8000000
+Info : Erase the padded zone before the write
+Error: Whole bank access must start at beginning of bank.
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x20000050 msp: 0x20018000
+wrote 12288 bytes from file Debug/CodeTemplate_Tim6Int.elf in 0.431969s (27.780 KiB/s)
+** Programming Finished **
+** Verify Started **
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20018000
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20018000
+verified 11160 bytes in 0.395556s (27.552 KiB/s)
+** Verified OK **
+** Resetting Target **
+shutdown command invoked
+10:28:38 **** Incremental Build of configuration Debug for project BckupSRAM_Standby ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\BckupSRAM_Standby\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/BckupSRAM_Standby/Inc" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:45:2: warning: implicit declaration of function '__HAL_RCC_BKPSRAM_CLK_ENABLE'; did you mean '__HAL_RCC_OPAMP_CLK_ENABLE'? [-Wimplicit-function-declaration]
+  __HAL_RCC_BKPSRAM_CLK_ENABLE();
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  __HAL_RCC_OPAMP_CLK_ENABLE
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/msp.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\BckupSRAM_Standby\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/BckupSRAM_Standby/Inc" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/msp.d" -MT"Src/msp.o" -o "Src/msp.o" "../Src/msp.c"
+Finished building: ../Src/msp.c
+ 
+Building target: BckupSRAM_Standby.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32L476RGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "BckupSRAM_Standby.elf" @"objects.list"   -lm
+Src/main.o: In function `main':
+C:\C_Workspace\BckupSRAM_Standby\Debug/../Src/main.c:45: undefined reference to `__HAL_RCC_BKPSRAM_CLK_ENABLE'
+collect2.exe: error: ld returned 1 exit status
+make: *** [BckupSRAM_Standby.elf] Error 1
+makefile:35: recipe for target 'BckupSRAM_Standby.elf' failed
+10:28:41 **** Incremental Build of configuration Debug for project CAN_LoopBack ****
+make all 
+make: Nothing to be done for 'all'.
+10:28:42 **** Incremental Build of configuration Debug for project CAN_LoopBack_Interupt ****
+make all 
+make: Nothing to be done for 'all'.
+10:28:42 **** Incremental Build of configuration Debug for project CodeTemplate_Tim6Int ****
+make all 
+make: Nothing to be done for 'all'.
+10:28:43 **** Incremental Build of configuration Debug for project HSE_SYSCLK_8Mhz_Run2 ****
+make all 
+make: Nothing to be done for 'all'.
+10:28:44 **** Incremental Build of configuration Debug for project HelloWorldV4 ****
+make all 
+make: Nothing to be done for 'all'.
+10:28:44 **** Incremental Build of configuration Debug for project LowPower_SleepOnExit_Tim6 ****
+make all 
+make: Nothing to be done for 'all'.
+10:28:45 **** Incremental Build of configuration Debug for project PLL_SYSCLK_HSI_Run2 ****
+make all 
+make: Nothing to be done for 'all'.
+10:28:46 **** Incremental Build of configuration Debug for project PWM1_timer_OC ****
+make all 
+make: Nothing to be done for 'all'.
+10:28:46 **** Incremental Build of configuration Debug for project PWM_LED ****
+make all 
+make: Nothing to be done for 'all'.
+10:28:47 **** Incremental Build of configuration Debug for project TimeBase_10ms_Int ****
+make all 
+make: Nothing to be done for 'all'.
+10:28:47 **** Incremental Build of configuration Debug for project Timer_100ms_Run3 ****
+make all 
+make: Nothing to be done for 'all'.
+10:28:48 **** Incremental Build of configuration Debug for project Timer_InputCapture ****
+make all 
+make: Nothing to be done for 'all'.
+10:28:49 **** Incremental Build of configuration Debug for project Timer_InputCapture_HSIClock ****
+make all 
+make: Nothing to be done for 'all'.
+10:28:49 **** Incremental Build of configuration Debug for project Timer_OuputCompare ****
+make all 
+make: Nothing to be done for 'all'.
+10:28:50 **** Incremental Build of configuration Debug for project USART2_Example ****
+make all 
+make: Nothing to be done for 'all'.
+10:28:51 **** Incremental Build of configuration Debug for project USART2_Example2_Interupt ****
+make all 
+make: Nothing to be done for 'all'.
+10:28:51 **** Incremental Build of configuration Debug for project WairForEvent ****
+make all 
+make: Nothing to be done for 'all'.
+10:28:52 **** Incremental Build of configuration Debug for project WairForInterupt ****
+make all 
+make: Nothing to be done for 'all'.
+10:31:45 **** Incremental Build of configuration Debug for project BckupSRAM_Standby ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\BckupSRAM_Standby\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/BckupSRAM_Standby/Inc" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:45:2: warning: implicit declaration of function '__HAL_RCC_BKPSRAM_CLK_ENABLE'; did you mean '__HAL_RCC_OPAMP_CLK_ENABLE'? [-Wimplicit-function-declaration]
+  __HAL_RCC_BKPSRAM_CLK_ENABLE();
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  __HAL_RCC_OPAMP_CLK_ENABLE
+../Src/main.c:47:2: warning: implicit declaration of function '__HALL_RCC_PWR_CLK_ENABLE'; did you mean '__HAL_RCC_PWR_CLK_ENABLE'? [-Wimplicit-function-declaration]
+  __HALL_RCC_PWR_CLK_ENABLE();
+  ^~~~~~~~~~~~~~~~~~~~~~~~~
+  __HAL_RCC_PWR_CLK_ENABLE
+Finished building: ../Src/main.c
+ 
+Building target: BckupSRAM_Standby.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32L476RGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "BckupSRAM_Standby.elf" @"objects.list"   -lm
+Src/main.o: In function `main':
+C:\C_Workspace\BckupSRAM_Standby\Debug/../Src/main.c:45: undefined reference to `__HAL_RCC_BKPSRAM_CLK_ENABLE'
+C:\C_Workspace\BckupSRAM_Standby\Debug/../Src/main.c:47: undefined reference to `__HALL_RCC_PWR_CLK_ENABLE'
+collect2.exe: error: ld returned 1 exit status
+makefile:35: recipe for target 'BckupSRAM_Standby.elf' failed
+make: *** [BckupSRAM_Standby.elf] Error 1
+10:31:48 **** Incremental Build of configuration Debug for project CAN_LoopBack ****
+make all 
+make: Nothing to be done for 'all'.
+10:31:48 **** Incremental Build of configuration Debug for project CAN_LoopBack_Interupt ****
+make all 
+make: Nothing to be done for 'all'.
+10:31:49 **** Incremental Build of configuration Debug for project CodeTemplate_Tim6Int ****
+make all 
+make: Nothing to be done for 'all'.
+10:31:49 **** Incremental Build of configuration Debug for project HSE_SYSCLK_8Mhz_Run2 ****
+make all 
+make: Nothing to be done for 'all'.
+10:31:50 **** Incremental Build of configuration Debug for project HelloWorldV4 ****
+make all 
+make: Nothing to be done for 'all'.
+10:31:51 **** Incremental Build of configuration Debug for project LowPower_SleepOnExit_Tim6 ****
+make all 
+make: Nothing to be done for 'all'.
+10:31:51 **** Incremental Build of configuration Debug for project PLL_SYSCLK_HSI_Run2 ****
+make all 
+make: Nothing to be done for 'all'.
+10:31:52 **** Incremental Build of configuration Debug for project PWM1_timer_OC ****
+make all 
+make: Nothing to be done for 'all'.
+10:31:53 **** Incremental Build of configuration Debug for project PWM_LED ****
+make all 
+make: Nothing to be done for 'all'.
+10:31:53 **** Incremental Build of configuration Debug for project TimeBase_10ms_Int ****
+make all 
+make: Nothing to be done for 'all'.
+10:31:54 **** Incremental Build of configuration Debug for project Timer_100ms_Run3 ****
+make all 
+make: Nothing to be done for 'all'.
+10:31:55 **** Incremental Build of configuration Debug for project Timer_InputCapture ****
+make all 
+make: Nothing to be done for 'all'.
+10:31:55 **** Incremental Build of configuration Debug for project Timer_InputCapture_HSIClock ****
+make all 
+make: Nothing to be done for 'all'.
+10:31:56 **** Incremental Build of configuration Debug for project Timer_OuputCompare ****
+make all 
+make: Nothing to be done for 'all'.
+10:31:57 **** Incremental Build of configuration Debug for project USART2_Example ****
+make all 
+make: Nothing to be done for 'all'.
+10:31:57 **** Incremental Build of configuration Debug for project USART2_Example2_Interupt ****
+make all 
+make: Nothing to be done for 'all'.
+10:31:58 **** Incremental Build of configuration Debug for project WairForEvent ****
+make all 
+make: Nothing to be done for 'all'.
+10:31:58 **** Incremental Build of configuration Debug for project WairForInterupt ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:10 **** Incremental Build of configuration Debug for project BckupSRAM_Standby ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\BckupSRAM_Standby\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/BckupSRAM_Standby/Inc" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c:22:11: error: expected '=', ',', ';', 'asm' or '__attribute__' before '-' token
+ char write-buff[] = "hello";
+           ^
+../Src/main.c: In function 'main':
+../Src/main.c:48:2: warning: implicit declaration of function '__HAL_RCC_BKPSRAM_CLK_ENABLE'; did you mean '__HAL_RCC_OPAMP_CLK_ENABLE'? [-Wimplicit-function-declaration]
+  __HAL_RCC_BKPSRAM_CLK_ENABLE();
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  __HAL_RCC_OPAMP_CLK_ENABLE
+../Src/main.c:50:2: warning: implicit declaration of function '__HALL_RCC_PWR_CLK_ENABLE'; did you mean '__HAL_RCC_PWR_CLK_ENABLE'? [-Wimplicit-function-declaration]
+  __HALL_RCC_PWR_CLK_ENABLE();
+  ^~~~~~~~~~~~~~~~~~~~~~~~~
+  __HAL_RCC_PWR_CLK_ENABLE
+../Src/main.c:55:32: error: 'BKPSRAM_BASE' undeclared (first use in this function); did you mean 'SRAM_BASE'?
+  pBackupSRAMbase = (uint32_t*) BKPSRAM_BASE;
+                                ^~~~~~~~~~~~
+                                SRAM_BASE
+../Src/main.c:55:32: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:57:32: error: 'write_buf' undeclared (first use in this function)
+  for(uint32_t i= 0; i < strlen(write_buf)+1, i++){
+                                ^~~~~~~~~
+../Src/main.c:57:44: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  for(uint32_t i= 0; i < strlen(write_buf)+1, i++){
+                                            ^
+../Src/main.c:57:49: error: expected ';' before ')' token
+  for(uint32_t i= 0; i < strlen(write_buf)+1, i++){
+                                                 ^
+../Src/main.c:58:5: error: 'pBackupSRAMBase' undeclared (first use in this function); did you mean 'pBackupSRAMbase'?
+   *(pBackupSRAMBase+i) = write_buf[i]_
+     ^~~~~~~~~~~~~~~
+     pBackupSRAMbase
+../Src/main.c:58:38: error: expected ';' before '_'
+   *(pBackupSRAMBase+i) = write_buf[i]_
+                                      ^
+make: *** [Src/main.o] Error 1
+Src/subdir.mk:30: recipe for target 'Src/main.o' failed
+10:38:12 **** Incremental Build of configuration Debug for project CAN_LoopBack ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:12 **** Incremental Build of configuration Debug for project CAN_LoopBack_Interupt ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:13 **** Incremental Build of configuration Debug for project CodeTemplate_Tim6Int ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:14 **** Incremental Build of configuration Debug for project HSE_SYSCLK_8Mhz_Run2 ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:14 **** Incremental Build of configuration Debug for project HelloWorldV4 ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:15 **** Incremental Build of configuration Debug for project LowPower_SleepOnExit_Tim6 ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:16 **** Incremental Build of configuration Debug for project PLL_SYSCLK_HSI_Run2 ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:16 **** Incremental Build of configuration Debug for project PWM1_timer_OC ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:17 **** Incremental Build of configuration Debug for project PWM_LED ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:17 **** Incremental Build of configuration Debug for project TimeBase_10ms_Int ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:18 **** Incremental Build of configuration Debug for project Timer_100ms_Run3 ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:19 **** Incremental Build of configuration Debug for project Timer_InputCapture ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:19 **** Incremental Build of configuration Debug for project Timer_InputCapture_HSIClock ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:20 **** Incremental Build of configuration Debug for project Timer_OuputCompare ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:20 **** Incremental Build of configuration Debug for project USART2_Example ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:21 **** Incremental Build of configuration Debug for project USART2_Example2_Interupt ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:22 **** Incremental Build of configuration Debug for project WairForEvent ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:22 **** Incremental Build of configuration Debug for project WairForInterupt ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:24 **** Incremental Build of configuration Debug for project BckupSRAM_Standby ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\BckupSRAM_Standby\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/BckupSRAM_Standby/Inc" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:48:2: warning: implicit declaration of function '__HAL_RCC_BKPSRAM_CLK_ENABLE'; did you mean '__HAL_RCC_OPAMP_CLK_ENABLE'? [-Wimplicit-function-declaration]
+  __HAL_RCC_BKPSRAM_CLK_ENABLE();
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  __HAL_RCC_OPAMP_CLK_ENABLE
+../Src/main.c:50:2: warning: implicit declaration of function '__HALL_RCC_PWR_CLK_ENABLE'; did you mean '__HAL_RCC_PWR_CLK_ENABLE'? [-Wimplicit-function-declaration]
+  __HALL_RCC_PWR_CLK_ENABLE();
+  ^~~~~~~~~~~~~~~~~~~~~~~~~
+  __HAL_RCC_PWR_CLK_ENABLE
+../Src/main.c:55:32: error: 'BKPSRAM_BASE' undeclared (first use in this function); did you mean 'SRAM_BASE'?
+  pBackupSRAMbase = (uint32_t*) BKPSRAM_BASE;
+                                ^~~~~~~~~~~~
+                                SRAM_BASE
+../Src/main.c:55:32: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:57:32: error: 'write_buf' undeclared (first use in this function); did you mean 'write_buff'?
+  for(uint32_t i= 0; i < strlen(write_buf)+1, i++){
+                                ^~~~~~~~~
+                                write_buff
+../Src/main.c:57:44: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  for(uint32_t i= 0; i < strlen(write_buf)+1, i++){
+                                            ^
+../Src/main.c:57:49: error: expected ';' before ')' token
+  for(uint32_t i= 0; i < strlen(write_buf)+1, i++){
+                                                 ^
+../Src/main.c:58:5: error: 'pBackupSRAMBase' undeclared (first use in this function); did you mean 'pBackupSRAMbase'?
+   *(pBackupSRAMBase+i) = write_buf[i]_
+     ^~~~~~~~~~~~~~~
+     pBackupSRAMbase
+../Src/main.c:58:38: error: expected ';' before '_'
+   *(pBackupSRAMBase+i) = write_buf[i]_
+                                      ^
+Src/subdir.mk:30: recipe for target 'Src/main.o' failed
+make: *** [Src/main.o] Error 1
+10:38:26 **** Incremental Build of configuration Debug for project CAN_LoopBack ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:26 **** Incremental Build of configuration Debug for project CAN_LoopBack_Interupt ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:27 **** Incremental Build of configuration Debug for project CodeTemplate_Tim6Int ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:28 **** Incremental Build of configuration Debug for project HSE_SYSCLK_8Mhz_Run2 ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:28 **** Incremental Build of configuration Debug for project HelloWorldV4 ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:29 **** Incremental Build of configuration Debug for project LowPower_SleepOnExit_Tim6 ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:30 **** Incremental Build of configuration Debug for project PLL_SYSCLK_HSI_Run2 ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:30 **** Incremental Build of configuration Debug for project PWM1_timer_OC ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:31 **** Incremental Build of configuration Debug for project PWM_LED ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:31 **** Incremental Build of configuration Debug for project TimeBase_10ms_Int ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:32 **** Incremental Build of configuration Debug for project Timer_100ms_Run3 ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:33 **** Incremental Build of configuration Debug for project Timer_InputCapture ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:33 **** Incremental Build of configuration Debug for project Timer_InputCapture_HSIClock ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:34 **** Incremental Build of configuration Debug for project Timer_OuputCompare ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:34 **** Incremental Build of configuration Debug for project USART2_Example ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:35 **** Incremental Build of configuration Debug for project USART2_Example2_Interupt ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:36 **** Incremental Build of configuration Debug for project WairForEvent ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:36 **** Incremental Build of configuration Debug for project WairForInterupt ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:44 **** Incremental Build of configuration Debug for project BckupSRAM_Standby ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\C_Workspace\BckupSRAM_Standby\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/BckupSRAM_Standby/Inc" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/BckupSRAM_Standby/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:48:2: warning: implicit declaration of function '__HAL_RCC_BKPSRAM_CLK_ENABLE'; did you mean '__HAL_RCC_OPAMP_CLK_ENABLE'? [-Wimplicit-function-declaration]
+  __HAL_RCC_BKPSRAM_CLK_ENABLE();
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  __HAL_RCC_OPAMP_CLK_ENABLE
+../Src/main.c:50:2: warning: implicit declaration of function '__HALL_RCC_PWR_CLK_ENABLE'; did you mean '__HAL_RCC_PWR_CLK_ENABLE'? [-Wimplicit-function-declaration]
+  __HALL_RCC_PWR_CLK_ENABLE();
+  ^~~~~~~~~~~~~~~~~~~~~~~~~
+  __HAL_RCC_PWR_CLK_ENABLE
+../Src/main.c:55:32: error: 'BKPSRAM_BASE' undeclared (first use in this function); did you mean 'SRAM_BASE'?
+  pBackupSRAMbase = (uint32_t*) BKPSRAM_BASE;
+                                ^~~~~~~~~~~~
+                                SRAM_BASE
+../Src/main.c:55:32: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:57:32: error: 'write_buf' undeclared (first use in this function); did you mean 'write_buff'?
+  for(uint32_t i= 0; i < strlen(write_buf)+1; i++){
+                                ^~~~~~~~~
+                                write_buff
+../Src/main.c:58:5: error: 'pBackupSRAMBase' undeclared (first use in this function); did you mean 'pBackupSRAMbase'?
+   *(pBackupSRAMBase+i) = write_buf[i]_
+     ^~~~~~~~~~~~~~~
+     pBackupSRAMbase
+../Src/main.c:58:38: error: expected ';' before '_'
+   *(pBackupSRAMBase+i) = write_buf[i]_
+                                      ^
+Src/subdir.mk:30: recipe for target 'Src/main.o' failed
+make: *** [Src/main.o] Error 1
+10:38:45 **** Incremental Build of configuration Debug for project CAN_LoopBack ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:46 **** Incremental Build of configuration Debug for project CAN_LoopBack_Interupt ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:47 **** Incremental Build of configuration Debug for project CodeTemplate_Tim6Int ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:47 **** Incremental Build of configuration Debug for project HSE_SYSCLK_8Mhz_Run2 ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:48 **** Incremental Build of configuration Debug for project HelloWorldV4 ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:49 **** Incremental Build of configuration Debug for project LowPower_SleepOnExit_Tim6 ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:49 **** Incremental Build of configuration Debug for project PLL_SYSCLK_HSI_Run2 ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:50 **** Incremental Build of configuration Debug for project PWM1_timer_OC ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:50 **** Incremental Build of configuration Debug for project PWM_LED ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:51 **** Incremental Build of configuration Debug for project TimeBase_10ms_Int ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:51 **** Incremental Build of configuration Debug for project Timer_100ms_Run3 ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:52 **** Incremental Build of configuration Debug for project Timer_InputCapture ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:53 **** Incremental Build of configuration Debug for project Timer_InputCapture_HSIClock ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:53 **** Incremental Build of configuration Debug for project Timer_OuputCompare ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:54 **** Incremental Build of configuration Debug for project USART2_Example ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:55 **** Incremental Build of configuration Debug for project USART2_Example2_Interupt ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:55 **** Incremental Build of configuration Debug for project WairForEvent ****
+make all 
+make: Nothing to be done for 'all'.
+10:38:56 **** Incremental Build of configuration Debug for project WairForInterupt ****
+make all 
+make: Nothing to be done for 'all'.

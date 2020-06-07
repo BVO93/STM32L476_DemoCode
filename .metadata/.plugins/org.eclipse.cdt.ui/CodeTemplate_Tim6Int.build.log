@@ -1,6 +1,6 @@
-11:17:49 **** Incremental Build of configuration Debug for project CodeTemplate_Tim6Int ****
+10:38:47 **** Incremental Build of configuration Debug for project CodeTemplate_Tim6Int ****
 make all 
 make: Nothing to be done for 'all'.
 
-11:17:50 Build Finished (took 375ms)
+10:38:47 Build Finished (took 450ms)
 

@@ -1,44 +1,6 @@
-11:17:59 **** Incremental Build of configuration Debug for project WairForInterupt ****
+10:38:56 **** Incremental Build of configuration Debug for project WairForInterupt ****
 make all 
-Building file: ../Src/main.c
-Invoking: MCU GCC Compiler
-C:\C_Workspace\WairForInterupt\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/WairForInterupt/Inc" -I"C:/C_Workspace/WairForInterupt/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/WairForInterupt/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/WairForInterupt/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/WairForInterupt/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
-../Src/main.c: In function 'main':
-../Src/main.c:43:2: warning: implicit declaration of function 'GPIO_AnalogConfig' [-Wimplicit-function-declaration]
-  GPIO_AnalogConfig();
-  ^~~~~~~~~~~~~~~~~
-../Src/main.c: In function 'GPIO_Init':
-../Src/main.c:138:19: warning: unused variable 'ledgpio' [-Wunused-variable]
-  GPIO_InitTypeDef ledgpio , buttongpio;
-                   ^~~~~~~
-../Src/main.c: At top level:
-../Src/main.c:168:6: warning: conflicting types for 'GPIO_AnalogConfig'
- void GPIO_AnalogConfig(void)
-      ^~~~~~~~~~~~~~~~~
-../Src/main.c:43:2: note: previous implicit declaration of 'GPIO_AnalogConfig' was here
-  GPIO_AnalogConfig();
-  ^~~~~~~~~~~~~~~~~
-Finished building: ../Src/main.c
- 
-Building file: ../Src/msp.c
-Invoking: MCU GCC Compiler
-C:\C_Workspace\WairForInterupt\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/C_Workspace/WairForInterupt/Inc" -I"C:/C_Workspace/WairForInterupt/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/C_Workspace/WairForInterupt/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/C_Workspace/WairForInterupt/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/C_Workspace/WairForInterupt/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/msp.d" -MT"Src/msp.o" -o "Src/msp.o" "../Src/msp.c"
-Finished building: ../Src/msp.c
- 
-Building target: WairForInterupt.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32L476RGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "WairForInterupt.elf" @"objects.list"   -lm
-Finished building target: WairForInterupt.elf
- 
-make --no-print-directory post-build
-Generating hex and Printing size information:
-arm-none-eabi-objcopy -O ihex "WairForInterupt.elf" "WairForInterupt.hex"
-arm-none-eabi-size "WairForInterupt.elf"
-   text	   data	    bss	    dec	    hex	filename
-  10672	    168	   1824	  12664	   3178	WairForInterupt.elf
- 
+make: Nothing to be done for 'all'.
 
-11:18:02 Build Finished (took 2s.722ms)
+10:38:56 Build Finished (took 433ms)
 
