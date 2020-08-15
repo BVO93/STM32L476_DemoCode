@@ -1,6 +1,6 @@
-10:38:50 **** Incremental Build of configuration Debug for project PWM1_timer_OC ****
+19:14:07 **** Incremental Build of configuration Debug for project PWM1_timer_OC ****
 make all 
 make: Nothing to be done for 'all'.
 
-10:38:50 Build Finished (took 437ms)
+19:14:07 Build Finished (took 431ms)
 

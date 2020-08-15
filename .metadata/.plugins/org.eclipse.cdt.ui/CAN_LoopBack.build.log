@@ -1,6 +1,6 @@
-10:38:45 **** Incremental Build of configuration Debug for project CAN_LoopBack ****
+19:14:03 **** Incremental Build of configuration Debug for project CAN_LoopBack ****
 make all 
 make: Nothing to be done for 'all'.
 
-10:38:46 Build Finished (took 438ms)
+19:14:03 Build Finished (took 507ms)
 

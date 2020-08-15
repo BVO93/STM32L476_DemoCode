@@ -1,6 +1,6 @@
-10:38:56 **** Incremental Build of configuration Debug for project WairForInterupt ****
+19:14:16 **** Incremental Build of configuration Debug for project WairForInterupt ****
 make all 
 make: Nothing to be done for 'all'.
 
-10:38:56 Build Finished (took 433ms)
+19:14:16 Build Finished (took 430ms)
 
